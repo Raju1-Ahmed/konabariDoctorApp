@@ -1,0 +1,598 @@
+[
+  {
+    "day": "Saturday (শনিবার)",
+    "doctors": [
+      {
+        "id": "sat-1",
+        "name": "Assistant Prof. Dr. Md. Miraj Hossain",
+        "title": "Medicine, Pain Medicine, Orthopedic Pain, Rheumatism & Diabetes Specialist",
+        "degrees": "MBBS, MD (Pain Medicine), Fellowship International (India)",
+        "designation": "Assistant Professor - Khwaja Yunus Ali Medical College & Hospital, Sirajganj",
+        "chamberTime": "Every Saturday, 5:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      },
+      {
+        "id": "sat-2",
+        "name": "Dr. P.K. Roy",
+        "title": "Kidney, Prostate, Urinary & Reproductive System Specialist Surgeon",
+        "degrees": "MBBS, BCS (Health), MS (Urology), Special Training (Uro-sonography, Endoscopy, Laparoscopy)",
+        "designation": "Consultant Urologist & Research Assistant (Transplant) - National Institute of Kidney Diseases & Urology, Dhaka",
+        "chamberTime": "Every Saturday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Urology"
+      },
+      {
+        "id": "sat-3",
+        "name": "Dr. Salma Begum",
+        "title": "Gynecology, Obstetrics, Female Diseases Specialist & Surgeon",
+        "degrees": "MBBS (Dhaka), PGT (Gyne & Obs), General Practitioner",
+        "designation": "Bangladesh Medical College Hospital",
+        "chamberTime": "Every Saturday, 3:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "sat-4",
+        "name": "Dr. D.A. Sayed (Sabbir)",
+        "title": "Medicine & Diabetes Specialist",
+        "degrees": "MBBS (MAC), FCPS (Medicine) FP, BMDC Reg No: 92521",
+        "designation": "Dhaka Medical College Hospital",
+        "chamberTime": "Every Saturday, 5:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      },
+      {
+        "id": "sat-5",
+        "name": "Dr. Kamrul Hasan",
+        "title": "Skin, Sex & Allergy Specialist",
+        "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & VD), DDV (Skin & VD)",
+        "designation": "Shaheed Tajuddin Ahmad Medical College",
+        "chamberTime": "Every Saturday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Dermatology"
+      },
+      {
+        "id": "sat-6",
+        "name": "Dr. Rita Akter",
+        "title": "Gynecology, Obstetrics & Ultrasonologist",
+        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs), Diploma & Medical Sonologist",
+        "designation": "Dhaka Medical College Hospital",
+        "chamberTime": "Every Saturday, 11:00 AM to 2:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "sat-7",
+        "name": "Dr. Md. Al-Amin",
+        "title": "Medicine, Skin, Sex, Bone, Joint, ENT, Pediatric Surgery & Diabetes Specialist",
+        "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM, BMDC Reg: A-87648",
+        "designation": "Tairunnessa Memorial Medical College & Hospital",
+        "chamberTime": "Every Saturday, 9:00 AM to 10:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      }
+    ]
+  },
+  {
+    "day": "Sunday (রবিবার)",
+    "doctors": [
+      {
+        "id": "sun-1",
+        "name": "Dr. Md. Mehedi Hasan",
+        "title": "Medicine, Heart, Chest Diseases & Diabetes Specialist",
+        "degrees": "MBBS (CU), CCD (BIRDEM), MD (Cardiology), BCS (Health)",
+        "designation": "National Institute of Cardiovascular Diseases & Hospital, Dhaka",
+        "chamberTime": "Every Sunday, 5:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Cardiology"
+      },
+      {
+        "id": "sun-2",
+        "name": "Dr. Sanchita Bhowmik",
+        "title": "Gynecology, Obstetrics & General Tumors Specialist Surgeon",
+        "degrees": "MBBS, BCS (Health), MCPS, FCPS (Gyne & Obs), Specially Trained on Breast & Uterine Cancer",
+        "designation": "Dhaka Medical College Hospital (Cancer Unit)",
+        "chamberTime": "Every Sunday, 5:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "sun-3",
+        "name": "Assistant Prof. Dr. Mofazzalul Haq",
+        "title": "Orthopedic Surgeon (Bone, Trauma, Injury & Deformity Specialist)",
+        "degrees": "M.D, Ph.D (Ortho / Russia)",
+        "designation": "Assistant Professor (Orthopedics Dept) - City Medical College Hospital",
+        "chamberTime": "Every Sunday, 3:00 PM to 6:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Orthopedics"
+      },
+      {
+        "id": "sun-4",
+        "name": "Dr. Kohinoor Akter",
+        "title": "Skin, Sexual Diseases, Allergy & Sex Specialist",
+        "degrees": "MBBS (DU), MACP (USA - Skin & Sex), Specially Trained on Skin & Sex in the USA",
+        "designation": "Medical College & Hospital Panelist",
+        "chamberTime": "Every Sunday, 4:00 PM to 7:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Dermatology"
+      },
+      {
+        "id": "sun-5",
+        "name": "Dr. Rita Akter",
+        "title": "Gynecology, Obstetrics & Ultrasonologist",
+        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
+        "designation": "Dhaka Medical College Hospital",
+        "chamberTime": "Every Sunday, 11:00 AM to 2:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "sun-6",
+        "name": "Dr. Amatur Rahim Priya",
+        "title": "Gynecology, Obstetrics Specialist & Sonologist",
+        "degrees": "MBBS (DU), PGT (Gyne & Obs), CMU (CMUD)",
+        "designation": "Consultant Panelist",
+        "chamberTime": "Every Sunday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "sun-7",
+        "name": "Dr. Md. Abu Fattah Jahin",
+        "title": "Medicine, Skin, Sex, Rheumatism, ENT, Trauma Specialist & Diabetologist",
+        "degrees": "MBBS (Dhaka), CMU (Ultra), CCD (BIRDEM)",
+        "designation": "Assistant Registrar (Dept of Medicine) - Tairunnessa Memorial Medical College & Hospital, BMDC: A-19204",
+        "chamberTime": "Every Sunday, 9:00 AM to 10:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      }
+    ]
+  },
+  {
+    "day": "Monday (সোমবার)",
+    "doctors": [
+      {
+        "id": "mon-1",
+        "name": "Associate Prof. Dr. Md. Moinul Islam",
+        "title": "General & Laparoscopic Surgeon",
+        "degrees": "MBBS (DMC), BCS (Health)",
+        "designation": "Associate Professor & Departmental Head (Surgery)",
+        "chamberTime": "Every Monday, 3:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Surgery"
+      },
+      {
+        "id": "mon-2",
+        "name": "Dr. Md. Monzur Morshed",
+        "title": "Medicine, Chest, Heart, Gastro-liver & Rheumatic Fever Specialist",
+        "degrees": "MBBS (Dhaka), BCS (Health), FCPS (Medicine)",
+        "designation": "National Institute of Cancer Research & Hospital, Mohakhali, Dhaka",
+        "chamberTime": "Every Monday, 3:00 PM to 10:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      },
+      {
+        "id": "mon-3",
+        "name": "Dr. Suraiya Bulbul",
+        "title": "Gynecology, Infertility, Obstetrics & High-Risk Pregnancy Specialist & Surgeon",
+        "degrees": "Consultant (Gynecology Department)",
+        "designation": "Labaid Specialist Panel",
+        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "mon-4",
+        "name": "Dr. Kamrul Hasan",
+        "title": "Skin, Sex & Allergy Specialist",
+        "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & VD), DDV (Skin & VD)",
+        "designation": "Shaheed Tajuddin Ahmad Medical College",
+        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Dermatology"
+      },
+      {
+        "id": "mon-5",
+        "name": "Dr. Rita Akter",
+        "title": "Gynecology, Obstetrics & Ultrasonologist",
+        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
+        "designation": "Dhaka Medical College Hospital",
+        "chamberTime": "Every Monday, 11:00 AM to 2:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Gynecology"
+      },
+      {
+        "id": "mon-6",
+        "name": "Dr. Md. Mehedi Hasan Rahat",
+        "title": "Bone, Joint, Rheumatism, Spine Specialist & Orthopedic Trauma Surgeon",
+        "degrees": "MBBS (Dhaka), FCGP, CCGP, CCD (BIRDEM), CCR (Rheumatology), PGT (Surgery & Orthopedics)",
+        "designation": "Asifia Rahman Medical College & Hospital, Gazipur, Reg No: A-1304-20",
+        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Orthopedics"
+      },
+      {
+        "id": "mon-7",
+        "name": "Dr. Md. Al-Amin",
+        "title": "Medicine, Skin, Sex, ENT, Pediatric Surgery & Diabetes Specialist",
+        "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM",
+        "designation": "Tairunnessa Memorial Medical College & Hospital",
+        "chamberTime": "Every Monday, 9:00 AM to 10:00 PM",
+        "image": "https://picsum.photos",
+        "department": "Medicine"
+      }
+    ]
+  },
+  {
+  "day": "Tuesday (মঙ্গলবার)",
+  "doctors": [
+    {
+      "id": "tue-1",
+      "name": "Assistant Prof. Dr. S.A. Anwar Ul Kadir",
+      "title": "Kidney, Prostate, Urinary Tract & Reproductive Disease Specialist & Surgeon",
+      "degrees": "Assistant Professor",
+      "designation": "Government Hospital Specialist Panel",
+      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Urology"
+    },
+    {
+      "id": "tue-2",
+      "name": "Assistant Prof. Dr. Nasrin Sultana Beauty",
+      "title": "Gynecology, Obstetrics & Infertility Specialist Surgeon",
+      "degrees": "MBBS (Dhaka), BCS (Health), MS (Gyne & Obs), MRCOG (London)",
+      "designation": "Shaheed Tajuddin Ahmad Medical College & Hospital",
+      "chamberTime": "Every Tuesday, 6:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "tue-3",
+      "name": "Dr. Kazi Md. Zafrul Haque",
+      "title": "Medicine, Cardiology, Chest Diseases & Diabetes Specialist",
+      "degrees": "MBBS, D-Card (NICVD), BCS (Health), Senior Consultant (Cardiology)",
+      "designation": "National Institute of Cardiovascular Diseases, Sher-e-Bangla Nagar, Dhaka",
+      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Cardiology"
+    },
+    {
+      "id": "tue-4",
+      "name": "Dr. Mahbub Alam Sohag",
+      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
+      "degrees": "MBBS (DU), DLO (BSMMU), Residential Surgeon (ENT Dept)",
+      "designation": "ENT & Head-Neck Cancer Hospital, Dhaka",
+      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "ENT"
+    },
+    {
+      "id": "tue-5",
+      "name": "Dr. Al-Imran Mahmud",
+      "title": "Bone, Joint, Rheumatism, Spine & Orthopedic Trauma Surgeon",
+      "degrees": "MBBS (DU), BCS (Health), MS (Orthopedic Surgery), FCPS (Surgery Part-2), Assistant Registrar",
+      "designation": "Shaheed Ahsan Ullah Master General Hospital",
+      "chamberTime": "Every Tuesday, 5:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Orthopedics"
+    },
+    {
+      "id": "tue-6",
+      "name": "Dr. Rita Akter",
+      "title": "Gynecology, Obstetrics & Ultrasonologist",
+      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
+      "designation": "Dhaka Medical College Hospital",
+      "chamberTime": "Every Tuesday, 11:00 AM to 2:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "tue-7",
+      "name": "Dr. Imtiaz Ahmed Bhuiyan",
+      "title": "Skin, Sex & Allergy Disease Specialist",
+      "degrees": "MBBS, MACP (America), DDV (Skin-Sex), CCD (BIRDEM)",
+      "designation": "Dhaka Medical College & Hospital",
+      "chamberTime": "Every Tuesday, 5:00 PM to 6:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Dermatology"
+    }
+  ]
+},
+{
+  "day": "Wednesday (বুধবার)",
+  "doctors": [
+    {
+      "id": "wed-1",
+      "name": "Dr. Md. Mehedi Hassan Ronu",
+      "title": "Medicine, Heart, Chest Diseases & Diabetes Specialist",
+      "degrees": "MBBS (Shaheed Suhrawardy Medical College), BCS (Health), CPD (Diabetology), MD Resident Cardiology",
+      "designation": "National Institute of Cardiovascular Diseases & Hospital",
+      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Cardiology"
+    },
+    {
+      "id": "wed-2",
+      "name": "Dr. Tahmina Binte Firoza (Taniya)",
+      "title": "Gynecology Specialist & Surgeon",
+      "degrees": "MBBS, CMU, FCPS (Part-1), BMDC Reg No: 95017",
+      "designation": "East West Medical College Hospital, Uttara, Dhaka",
+      "chamberTime": "Every Wednesday, 4:00 PM to 7:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "wed-3",
+      "name": "Dr. Md. Tanvin Islam Roni",
+      "title": "Medicine, Orthopedics, Diabetes & Rheumatic Pain Practitioner",
+      "degrees": "MBBS (DU), CCD (BIRDEM), PGT (Orthopedics & Medicine)",
+      "designation": "Uttara Crescent Hospital & Diagnostic Center",
+      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Orthopedics"
+    },
+    {
+      "id": "wed-4",
+      "name": "Dr. Kamrul Hasan",
+      "title": "Skin, Sex & Allergy Specialist",
+      "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & DD), DDV (Skin & DD), BMDC Reg: A-130777",
+      "designation": "Shaheed Tajuddin Ahmad Medical College",
+      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Dermatology"
+    },
+    {
+      "id": "wed-5",
+      "name": "Dr. Rita Akter",
+      "title": "Gynecology, Obstetrics & Ultrasonologist",
+      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
+      "designation": "Dhaka Medical College Hospital",
+      "chamberTime": "Every Wednesday, 11:00 AM to 2:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "wed-6",
+      "name": "Dr. Md. Al-Amin",
+      "title": "Medicine, Diabetes & Sonology Specialist",
+      "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM, BMDC: A-87648",
+      "designation": "Tairunnessa Memorial Medical College & Hospital",
+      "chamberTime": "Every Wednesday, 9:00 AM to 10:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    },
+    {
+      "id": "wed-7",
+      "name": "Associate Prof. Dr. Morshed Alam",
+      "title": "Neonatal, Child & Adolescent Disease Specialist",
+      "degrees": "MBBS, DPH (PG Hospital), DCH (Australia), PGPN (USA), ESN (Germany), CCD",
+      "designation": "City Medical College Hospital, Gazipur",
+      "chamberTime": "Every Wednesday & Thursday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Pediatrics"
+    }
+  ]
+},
+{
+  "day": "Thursday (বৃহস্পতিবার)",
+  "doctors": [
+    {
+      "id": "thu-1",
+      "name": "Assistant Prof. Dr. Md. Hasanul Haq (Nipun)",
+      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
+      "degrees": "Assistant Professor, M.D",
+      "designation": "Government Medical College Panelist",
+      "chamberTime": "Every Thursday, 4:00 PM to 7:00 PM",
+      "image": "https://picsum.photos",
+      "department": "ENT"
+    },
+    {
+      "id": "thu-2",
+      "name": "Dr. Tahmina Binte Firoza (Taniya)",
+      "title": "Gynecology Specialist & Surgeon",
+      "degrees": "MBBS, CMU, FCPS (Part-1), BMDC Reg No: 95017",
+      "designation": "East West Medical College Hospital, Uttara, Dhaka",
+      "chamberTime": "Every Thursday, 4:00 PM to 7:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "thu-3",
+      "name": "Dr. Kazi Faejur Rahman",
+      "title": "Medicine, Chest Diseases, Gastro-liver & Rheumatic Fever Specialist",
+      "degrees": "MBBS (DU), CCD (BIRDEM), FCGP (Family Medicine)",
+      "designation": "East West Medical College Hospital, Uttara, Dhaka",
+      "chamberTime": "Every Thursday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    },
+    {
+      "id": "thu-4",
+      "name": "Dr. Rita Akter",
+      "title": "Gynecology, Obstetrics & Ultrasonologist",
+      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
+      "designation": "Dhaka Medical College Hospital",
+      "chamberTime": "Every Thursday, 11:00 AM to 2:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "thu-5",
+      "name": "Dr. Md. Abu Fattah Jahin",
+      "title": "Medicine, Skin, Sex, ENT, Injury, Rheumatic Pain & Diabetes Specialist",
+      "degrees": "MBBS (Dhaka), CMU (Ultra), CCD (BIRDEM), Assistant Registrar (Medicine)",
+      "designation": "Tairunnessa Memorial Medical College & Hospital, BMDC No: A-19204",
+      "chamberTime": "Every Thursday, 9:00 AM to 10:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    },
+    {
+      "id": "thu-6",
+      "name": "Dr. M. Jobayer Hossain",
+      "title": "Medicine, Rheumatic Pain, Diabetes, General Surgery & Pediatrics Physician",
+      "degrees": "MBBS (Dhaka), CMU, PGT (Medicine)",
+      "designation": "Gonoshasthaya Samaj Vittik Medical College Hospital",
+      "chamberTime": "Every Wednesday & Thursday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    }
+  ]
+},
+{
+  "day": "Friday (শুক্রবার)",
+  "doctors": [
+    {
+      "id": "fri-1",
+      "name": "Prof. Dr. Nilufa Yasmin",
+      "title": "Gynecology, Obstetrics, Infertility Specialist & Surgeon",
+      "degrees": "MBBS, BCS (Health), MS (Gyne), IVF (Mumbai, India) Trained",
+      "designation": "Medical Director - Final Infertility Center, Professor (Gynecology Dept)",
+      "chamberTime": "Every Friday, 12:00 PM to 6:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "fri-2",
+      "name": "Associate Prof. Dr. Arunangshu Raha Alok",
+      "title": "Medicine, Gastrointestinal, Liver & Diabetes Specialist",
+      "degrees": "MBBS, BCS (Health), MD (Gastroenterology)",
+      "designation": "Associate Professor - National Institute of Digestive Diseases, Dhaka",
+      "chamberTime": "Every Friday, 10:00 AM to 5:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    },
+    {
+      "id": "fri-3",
+      "name": "Associate Prof. Dr. Md. Mainul Islam",
+      "title": "General & Laparoscopic Surgeon",
+      "degrees": "MBBS (DMC), BCS (Health), General & Laparoscopic Surgical Specialist",
+      "designation": "Associate Professor & Departmental Head",
+      "chamberTime": "Every Friday, 10:00 AM to 5:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Surgery"
+    },
+    {
+      "id": "fri-4",
+      "name": "Dr. Md. Kaisarul Islam",
+      "title": "Heart Disease, Medicine & Diabetes Specialist",
+      "degrees": "D-Card (BSMMU), BCS (Health), Consultant Cardiology",
+      "designation": "Cardiology Consultant Panelist",
+      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Cardiology"
+    },
+    {
+      "id": "fri-5",
+      "name": "Dr. S.M. Shafi-Ul-Bashar",
+      "title": "Orthopedic Trauma Surgeon (Bone, Joint, Rheumatism, Spine Specialist)",
+      "degrees": "MBBS (Dhaka), BCS (Health), MS (Orthopedic Surgery)",
+      "designation": "NITOR (Pangu Hospital), Dhaka",
+      "chamberTime": "Every Friday, 3:00 PM to 7:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Orthopedics"
+    },
+    {
+      "id": "fri-6",
+      "name": "Assistant Prof. Dr. Fatema-Tuz-Zohura",
+      "title": "Skin, Sexual Diseases, Allergy, Laser & Cosmetic Dermatologist",
+      "degrees": "MBBS, MD (BSMMU), Assistant Professor",
+      "designation": "Enam Medical College & Hospital",
+      "chamberTime": "Every Friday, 4:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Dermatology"
+    },
+    {
+      "id": "fri-7",
+      "name": "Dr. Md. Monzur Morshed",
+      "title": "Medicine, Chest, Heart, Gastro-liver & Rheumatic Fever Specialist",
+      "degrees": "MBBS (Dhaka), BCS (Health), FCPS (Medicine)",
+      "designation": "National Institute of Cancer Research & Hospital, Mohakhali, Dhaka",
+      "chamberTime": "Every Friday, 10:00 AM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    },
+    {
+      "id": "fri-8",
+      "name": "Dr. Sohag Rana",
+      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
+      "degrees": "MBBS, BCS (Health), DLO (ENT) Consultant",
+      "designation": "Medical College Hospital Panelist",
+      "chamberTime": "Every Friday, 10:00 AM to 1:00 PM",
+      "image": "https://picsum.photos",
+      "department": "ENT"
+    },
+    {
+      "id": "fri-9",
+      "name": "Dr. Faridul Alam",
+      "title": "ENT Specialist & Head-Neck Surgeon",
+      "degrees": "MBBS, CCD (BIRDEM), DLO (BSMMU), Consultant ENT Department",
+      "designation": "Enam Medical College & Hospital",
+      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "ENT"
+    },
+    {
+      "id": "fri-10",
+      "name": "Dr. Md. Azmir Hossain Real",
+      "title": "Neonatal & Child Disease Specialist (0 to 18 Years)",
+      "degrees": "MBBS, DCH, FCPS (FP), Former Specialist (PG Hospital)",
+      "designation": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+      "chamberTime": "Every Friday, 10:00 AM to 1:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Pediatrics"
+    },
+    {
+      "id": "fri-11",
+      "name": "Dr. Farhana Sultana",
+      "title": "Sonologist & Fetal Congenital Anomaly Scanning Specialist",
+      "degrees": "MBBS (DMU), (BITMIR), Special Training on TVS Fetal Scan",
+      "designation": "Advanced Ultrasonography Diagnostics Panel",
+      "chamberTime": "Every Friday, 10:00 AM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "fri-12",
+      "name": "Dr. Al-Imran Mahmud",
+      "title": "Bone, Joint, Rheumatism, Spine & Orthopedic Trauma Surgeon",
+      "degrees": "MBBS (DU), BCS (Health), FCPS Part-2, Assistant Registrar",
+      "designation": "Shaheed Ahsan Ullah Master General Hospital",
+      "chamberTime": "Every Friday, 10:00 AM to 3:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Orthopedics"
+    },
+    {
+      "id": "fri-13",
+      "name": "Dr. Amatur Rahim Priya",
+      "title": "Gynecology, Obstetrics Specialist & Surgeon",
+      "degrees": "MBBS (DU), PGT (Gyne & Obs), CMU (CMUD)",
+      "designation": "Advanced Family Health Consultant",
+      "chamberTime": "Every Friday, 9:00 AM to 5:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "fri-14",
+      "name": "Dr. Monira Ferdous",
+      "title": "Gynecology, Obstetrics & Female Disease Specialist",
+      "degrees": "MBBS (CMU), DMU (Ultra), PGT (Gyne & Obs), PGT (Medicine)",
+      "designation": "Dhaka Medical College & Hospital",
+      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Gynecology"
+    },
+    {
+      "id": "fri-15",
+      "name": "Dr. Amit Sikdar",
+      "title": "Medicine, Skin, Sex, ENT, Trauma & Diabetes Practitioner",
+      "degrees": "MBBS, DU, CMU, BMDC Reg: A-108640",
+      "designation": "Tairunnessa Memorial Medical College & Hospital",
+      "chamberTime": "Every Friday, 9:00 AM to 10:00 PM",
+      "image": "https://picsum.photos",
+      "department": "Medicine"
+    }
+  ]
+}
+  
+]
