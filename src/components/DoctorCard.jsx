@@ -1,5 +1,6 @@
 import { FaCalendarCheck, FaClock, FaUserMd } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, createSearchParams } from 'react-router-dom'
+import { resolveImageUrl } from '../utils/imageUrl.js'
 
 function DoctorCard({ doctor, compact = false }) {
   const initials = doctor.name
@@ -9,7 +10,13 @@ function DoctorCard({ doctor, compact = false }) {
     .map((part) => part[0])
     .join('')
 
-  const imageSrc = doctor.image && doctor.image !== 'https://picsum.photos' ? doctor.image : ''
+  const imageSrc = doctor.image && doctor.image !== 'https://picsum.photos' ? resolveImageUrl(doctor.image) : ''
+  const appointmentQuery = createSearchParams({
+    doctorName: doctor.name || '',
+    department: doctor.department || '',
+    day: doctor.day || '',
+    chamberTime: doctor.chamberTime || '',
+  }).toString()
 
   return (
     <article
@@ -29,11 +36,7 @@ function DoctorCard({ doctor, compact = false }) {
         >
           {imageSrc ? (
             <a href={imageSrc} rel="noreferrer" target="_blank">
-              <img
-                alt={doctor.name}
-                className="h-full w-full rounded-[1.5rem] object-cover"
-                src={imageSrc}
-              />
+              <img alt={doctor.name} className="h-full w-full rounded-[1.5rem] object-cover" src={imageSrc} />
             </a>
           ) : (
             <div className="flex h-full w-full items-center justify-center rounded-[1.5rem]">
@@ -47,9 +50,7 @@ function DoctorCard({ doctor, compact = false }) {
 
       <div className={compact ? 'space-y-3 p-4' : 'space-y-4 p-6'}>
         <div>
-          <h3 className={`font-poppins font-black leading-tight text-dark ${compact ? 'text-lg' : 'text-xl'}`}>
-            {doctor.name}
-          </h3>
+          <h3 className={`font-poppins font-black leading-tight text-dark ${compact ? 'text-lg' : 'text-xl'}`}>{doctor.name}</h3>
           <p className={`mt-1 font-bold text-primary ${compact ? 'text-xs' : 'text-sm'}`}>{doctor.title}</p>
         </div>
 
@@ -72,7 +73,7 @@ function DoctorCard({ doctor, compact = false }) {
           className={`inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent font-black text-white transition hover:bg-orange-600 ${
             compact ? 'px-4 py-2.5 text-sm' : 'px-5 py-3'
           }`}
-          to="/appointment"
+          to={`/appointment?${appointmentQuery}`}
         >
           <FaCalendarCheck />
           অ্যাপয়েন্টমেন্ট নিন
