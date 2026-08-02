@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+*.traineddata
+dist.zip
+tmp-doctors/
 
 # Editor directories and files
 .vscode/*
