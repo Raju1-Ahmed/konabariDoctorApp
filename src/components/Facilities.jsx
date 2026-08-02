@@ -7,22 +7,18 @@ import {
   FaParking,
   FaPills,
   FaProcedures,
-} from "react-icons/fa";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
-
-import { facilities } from "../data/siteData.js";
-import SectionHeader from "./SectionHeader.jsx";
-
-import lab1 from "../assets/LabAid Hospital Konabari electric Machine (1).jpeg";
-import lab2 from "../assets/LabAid Hospital Konabari electric Machine (2).jpeg";
-import lab3 from "../assets/LabAid Hospital Konabari electric Machine (3).jpeg";
-import lab4 from "../assets/LabAid Hospital Konabari electric Machine (4).jpeg";
-import lab5 from "../assets/LabAid Hospital Konabari electric Machine (5).jpeg";
+} from 'react-icons/fa'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import lab1 from '../assets/LabAid Hospital Konabari electric Machine (1).jpeg'
+import lab2 from '../assets/LabAid Hospital Konabari electric Machine (2).jpeg'
+import lab3 from '../assets/LabAid Hospital Konabari electric Machine (3).jpeg'
+import lab4 from '../assets/LabAid Hospital Konabari electric Machine (4).jpeg'
+import lab5 from '../assets/LabAid Hospital Konabari electric Machine (5).jpeg'
+import { facilities } from '../data/siteData.js'
+import SectionHeader from './SectionHeader.jsx'
 
 const facilityIcons = [
   FaProcedures,
@@ -33,87 +29,77 @@ const facilityIcons = [
   FaAmbulance,
   FaBed,
   FaParking,
-];
+]
 
-const labImages = [lab1, lab2, lab3, lab4, lab5];
+const labImages = [lab1, lab2, lab3, lab4, lab5]
 
 function Facilities() {
   return (
-    <section
-      id="facilities"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-teal-50 py-24"
-    >
-      {/* Background Blur */}
-      <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-teal-300/20 blur-[120px]" />
-      <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-cyan-300/20 blur-[120px]" />
-
-      <div className="section-container relative z-10">
-
+    <section className="section-padding bg-gradient-to-b from-white via-slate-50 to-teal-50" id="facilities">
+      <div className="section-container">
         <SectionHeader
           eyebrow="Facilities"
-          title="Hospital Facilities & Smart Pathology Lab"
-          text="Modern diagnostic laboratory with advanced medical equipment, experienced technicians and quality healthcare services."
+          title="Hospital facilities and smart laboratory"
+          text="Showcase the service stack clearly: ICU, NICU, OT, lab, ambulance, cabin and parking, followed by a visual gallery."
         />
 
-     
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {facilities.map((facility, index) => {
+            const FacilityIcon = facilityIcons[index]
 
-        {/* Laboratory Gallery */}
+            return (
+              <article
+                className="flex items-center gap-4 rounded-3xl border border-white bg-white p-5 shadow-xl shadow-slate-900/5"
+                key={facility}
+              >
+                <div className="grid size-14 shrink-0 place-items-center rounded-2xl bg-teal-50 text-2xl text-primary">
+                  <FacilityIcon />
+                </div>
+                <div>
+                  <h3 className="font-poppins text-lg font-black text-dark">{facility}</h3>
+                  <p className="mt-1 text-sm text-slate-500">Available for patient care and diagnostics.</p>
+                </div>
+              </article>
+            )
+          })}
+        </div>
 
-        <div className="mt-28">
-
+        <div className="mt-16">
           <Swiper
-            modules={[Autoplay, Pagination]}
-            slidesPerView={1}
-            loop={true}
-            spaceBetween={30}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
             }}
+            modules={[Autoplay, Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={30}
           >
             {labImages.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="group overflow-hidden rounded-[28px] bg-white shadow-xl">
+                <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-xl shadow-slate-900/5">
                   <div className="relative overflow-hidden">
                     <img
+                      alt={`Lab equipment ${index + 1}`}
+                      className="h-[360px] w-full object-cover transition duration-700 group-hover:scale-110"
                       src={image}
-                      alt={`Lab ${index + 1}`}
-                      className="h-[380px] w-full object-cover transition duration-700 group-hover:scale-110"
                     />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/10 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
-
-                    <div className="absolute bottom-0 left-0 right-0 translate-y-10 p-6 text-white transition duration-500 group-hover:translate-y-0">
-                      <h4 className="text-xl font-bold">
-                        Advanced Diagnostic Equipment
-                      </h4>
-
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                    <div className="absolute inset-x-0 bottom-0 translate-y-10 p-6 text-white transition duration-500 group-hover:translate-y-0">
+                      <h4 className="text-xl font-bold">Advanced Diagnostic Equipment</h4>
                       <p className="mt-2 text-sm text-slate-200">
-                        High precision medical technology delivering fast,
-                        reliable and accurate laboratory reports.
+                        Fast, reliable and accurate laboratory reporting for patients.
                       </p>
                     </div>
                   </div>
-                </div>
+                </article>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-
       </div>
     </section>
-  );
+  )
 }
 
-export default Facilities;
+export default Facilities

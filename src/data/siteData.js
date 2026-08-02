@@ -1,10 +1,10 @@
 export const contactInfo = {
-  emergency: '01923665521',
-  email: 'konabarilabaidhospital.com',
+  emergency: '01916546817',
+  email: 'konabarilabaidhospital@gmail.com',
   address: 'Konabari, Gazipur, Bangladesh',
   hours: 'Open 24 Hours · Emergency Always Available',
   facebook: 'https://www.facebook.com/Konabari.Labaid/',
-  whatsapp: '01923665521',
+  whatsapp: '01916546817',
 }
 
 export const navItems = [

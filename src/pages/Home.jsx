@@ -15,7 +15,7 @@ import SectionHeader from "../components/SectionHeader";
 import Slide from "../components/Slides";
 import Testimonial from "../components/Testimonial";
 import WhyChooseUs from "../components/WhyChooseUs";
-import Doctors from "./Doctors";
+import DoctorsSchedule from "../components/DoctorsSchedule";
 function Home() {
   return (
     <main>
@@ -56,6 +56,8 @@ function Home() {
 
       <Slide />
 
+      <DoctorsSchedule />
+
       <Reveal>
         <QuickServices />
       </Reveal>
@@ -68,12 +70,6 @@ function Home() {
         <Department />
       </Reveal>
 
-      {/* Doctors Section */}
-
-      <Reveal>
-  <Doctors/>
-      </Reveal>
-
       <Reveal>
         <WhyChooseUs />
       </Reveal>
@@ -82,6 +78,10 @@ function Home() {
 
       <Reveal>
         <Facilities />
+      </Reveal>
+
+      <Reveal>
+        <Gallery />
       </Reveal>
 
       <Reveal>

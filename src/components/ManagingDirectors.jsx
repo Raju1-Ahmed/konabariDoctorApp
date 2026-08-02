@@ -1,5 +1,5 @@
 import md1 from "../assets/file.jpg";
-import md2 from "../assets/LabAid_Hospital_Konabari_Branding main Logo.png";
+import md2 from "../assets/MD2.jpg";
 
 export default function ManagingDirectors() {
   return (
@@ -75,7 +75,7 @@ export default function ManagingDirectors() {
             <div className="mt-8 rounded-2xl bg-teal-50 p-6">
 
               <p className="font-bold text-primary">
-                মোবাইল: ০১৯১৬-৫৮১৭
+                মোবাইল: 01916546817
               </p>
 
             </div>

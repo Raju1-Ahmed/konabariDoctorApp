@@ -1,598 +1,617 @@
-[
-  {
-    "day": "Saturday (শনিবার)",
-    "doctors": [
-      {
-        "id": "sat-1",
-        "name": "Assistant Prof. Dr. Md. Miraj Hossain",
-        "title": "Medicine, Pain Medicine, Orthopedic Pain, Rheumatism & Diabetes Specialist",
-        "degrees": "MBBS, MD (Pain Medicine), Fellowship International (India)",
-        "designation": "Assistant Professor - Khwaja Yunus Ali Medical College & Hospital, Sirajganj",
-        "chamberTime": "Every Saturday, 5:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      },
-      {
-        "id": "sat-2",
-        "name": "Dr. P.K. Roy",
-        "title": "Kidney, Prostate, Urinary & Reproductive System Specialist Surgeon",
-        "degrees": "MBBS, BCS (Health), MS (Urology), Special Training (Uro-sonography, Endoscopy, Laparoscopy)",
-        "designation": "Consultant Urologist & Research Assistant (Transplant) - National Institute of Kidney Diseases & Urology, Dhaka",
-        "chamberTime": "Every Saturday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Urology"
-      },
-      {
-        "id": "sat-3",
-        "name": "Dr. Salma Begum",
-        "title": "Gynecology, Obstetrics, Female Diseases Specialist & Surgeon",
-        "degrees": "MBBS (Dhaka), PGT (Gyne & Obs), General Practitioner",
-        "designation": "Bangladesh Medical College Hospital",
-        "chamberTime": "Every Saturday, 3:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "sat-4",
-        "name": "Dr. D.A. Sayed (Sabbir)",
-        "title": "Medicine & Diabetes Specialist",
-        "degrees": "MBBS (MAC), FCPS (Medicine) FP, BMDC Reg No: 92521",
-        "designation": "Dhaka Medical College Hospital",
-        "chamberTime": "Every Saturday, 5:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      },
-      {
-        "id": "sat-5",
-        "name": "Dr. Kamrul Hasan",
-        "title": "Skin, Sex & Allergy Specialist",
-        "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & VD), DDV (Skin & VD)",
-        "designation": "Shaheed Tajuddin Ahmad Medical College",
-        "chamberTime": "Every Saturday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Dermatology"
-      },
-      {
-        "id": "sat-6",
-        "name": "Dr. Rita Akter",
-        "title": "Gynecology, Obstetrics & Ultrasonologist",
-        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs), Diploma & Medical Sonologist",
-        "designation": "Dhaka Medical College Hospital",
-        "chamberTime": "Every Saturday, 11:00 AM to 2:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "sat-7",
-        "name": "Dr. Md. Al-Amin",
-        "title": "Medicine, Skin, Sex, Bone, Joint, ENT, Pediatric Surgery & Diabetes Specialist",
-        "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM, BMDC Reg: A-87648",
-        "designation": "Tairunnessa Memorial Medical College & Hospital",
-        "chamberTime": "Every Saturday, 9:00 AM to 10:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      }
-    ]
-  },
-  {
-    "day": "Sunday (রবিবার)",
-    "doctors": [
-      {
-        "id": "sun-1",
-        "name": "Dr. Md. Mehedi Hasan",
-        "title": "Medicine, Heart, Chest Diseases & Diabetes Specialist",
-        "degrees": "MBBS (CU), CCD (BIRDEM), MD (Cardiology), BCS (Health)",
-        "designation": "National Institute of Cardiovascular Diseases & Hospital, Dhaka",
-        "chamberTime": "Every Sunday, 5:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Cardiology"
-      },
-      {
-        "id": "sun-2",
-        "name": "Dr. Sanchita Bhowmik",
-        "title": "Gynecology, Obstetrics & General Tumors Specialist Surgeon",
-        "degrees": "MBBS, BCS (Health), MCPS, FCPS (Gyne & Obs), Specially Trained on Breast & Uterine Cancer",
-        "designation": "Dhaka Medical College Hospital (Cancer Unit)",
-        "chamberTime": "Every Sunday, 5:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "sun-3",
-        "name": "Assistant Prof. Dr. Mofazzalul Haq",
-        "title": "Orthopedic Surgeon (Bone, Trauma, Injury & Deformity Specialist)",
-        "degrees": "M.D, Ph.D (Ortho / Russia)",
-        "designation": "Assistant Professor (Orthopedics Dept) - City Medical College Hospital",
-        "chamberTime": "Every Sunday, 3:00 PM to 6:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Orthopedics"
-      },
-      {
-        "id": "sun-4",
-        "name": "Dr. Kohinoor Akter",
-        "title": "Skin, Sexual Diseases, Allergy & Sex Specialist",
-        "degrees": "MBBS (DU), MACP (USA - Skin & Sex), Specially Trained on Skin & Sex in the USA",
-        "designation": "Medical College & Hospital Panelist",
-        "chamberTime": "Every Sunday, 4:00 PM to 7:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Dermatology"
-      },
-      {
-        "id": "sun-5",
-        "name": "Dr. Rita Akter",
-        "title": "Gynecology, Obstetrics & Ultrasonologist",
-        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
-        "designation": "Dhaka Medical College Hospital",
-        "chamberTime": "Every Sunday, 11:00 AM to 2:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "sun-6",
-        "name": "Dr. Amatur Rahim Priya",
-        "title": "Gynecology, Obstetrics Specialist & Sonologist",
-        "degrees": "MBBS (DU), PGT (Gyne & Obs), CMU (CMUD)",
-        "designation": "Consultant Panelist",
-        "chamberTime": "Every Sunday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "sun-7",
-        "name": "Dr. Md. Abu Fattah Jahin",
-        "title": "Medicine, Skin, Sex, Rheumatism, ENT, Trauma Specialist & Diabetologist",
-        "degrees": "MBBS (Dhaka), CMU (Ultra), CCD (BIRDEM)",
-        "designation": "Assistant Registrar (Dept of Medicine) - Tairunnessa Memorial Medical College & Hospital, BMDC: A-19204",
-        "chamberTime": "Every Sunday, 9:00 AM to 10:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      }
-    ]
-  },
-  {
-    "day": "Monday (সোমবার)",
-    "doctors": [
-      {
-        "id": "mon-1",
-        "name": "Associate Prof. Dr. Md. Moinul Islam",
-        "title": "General & Laparoscopic Surgeon",
-        "degrees": "MBBS (DMC), BCS (Health)",
-        "designation": "Associate Professor & Departmental Head (Surgery)",
-        "chamberTime": "Every Monday, 3:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Surgery"
-      },
-      {
-        "id": "mon-2",
-        "name": "Dr. Md. Monzur Morshed",
-        "title": "Medicine, Chest, Heart, Gastro-liver & Rheumatic Fever Specialist",
-        "degrees": "MBBS (Dhaka), BCS (Health), FCPS (Medicine)",
-        "designation": "National Institute of Cancer Research & Hospital, Mohakhali, Dhaka",
-        "chamberTime": "Every Monday, 3:00 PM to 10:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      },
-      {
-        "id": "mon-3",
-        "name": "Dr. Suraiya Bulbul",
-        "title": "Gynecology, Infertility, Obstetrics & High-Risk Pregnancy Specialist & Surgeon",
-        "degrees": "Consultant (Gynecology Department)",
-        "designation": "Labaid Specialist Panel",
-        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "mon-4",
-        "name": "Dr. Kamrul Hasan",
-        "title": "Skin, Sex & Allergy Specialist",
-        "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & VD), DDV (Skin & VD)",
-        "designation": "Shaheed Tajuddin Ahmad Medical College",
-        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Dermatology"
-      },
-      {
-        "id": "mon-5",
-        "name": "Dr. Rita Akter",
-        "title": "Gynecology, Obstetrics & Ultrasonologist",
-        "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
-        "designation": "Dhaka Medical College Hospital",
-        "chamberTime": "Every Monday, 11:00 AM to 2:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Gynecology"
-      },
-      {
-        "id": "mon-6",
-        "name": "Dr. Md. Mehedi Hasan Rahat",
-        "title": "Bone, Joint, Rheumatism, Spine Specialist & Orthopedic Trauma Surgeon",
-        "degrees": "MBBS (Dhaka), FCGP, CCGP, CCD (BIRDEM), CCR (Rheumatology), PGT (Surgery & Orthopedics)",
-        "designation": "Asifia Rahman Medical College & Hospital, Gazipur, Reg No: A-1304-20",
-        "chamberTime": "Every Monday, 4:00 PM to 8:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Orthopedics"
-      },
-      {
-        "id": "mon-7",
-        "name": "Dr. Md. Al-Amin",
-        "title": "Medicine, Skin, Sex, ENT, Pediatric Surgery & Diabetes Specialist",
-        "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM",
-        "designation": "Tairunnessa Memorial Medical College & Hospital",
-        "chamberTime": "Every Monday, 9:00 AM to 10:00 PM",
-        "image": "https://picsum.photos",
-        "department": "Medicine"
-      }
-    ]
-  },
-  {
-  "day": "Tuesday (মঙ্গলবার)",
+﻿[
+    {
+        "day":  "শুক্রবার",
+        "doctors":  [
+                        {
+                            "id":  "fri-1",
+                            "name":  "অধ্যাপক ডা. নিলুফা ইয়াসমিন",
+                            "image":  "https://i.ibb.co/0RqCf5j3/27.png",
+                            "title":  "স্ত্রীরোগ, প্রসূতি, বন্ধ্যাত্ব বিশেষজ্ঞ ও সার্জন",
+                            "degrees":  "এমবিবিএস, বিসিএস (স্বাস্থ্য), এমএস (গাইনি), আইভিএফ প্রশিক্ষণপ্রাপ্ত (মুম্বাই, ভারত)",
+                            "designation":  "মেডিকেল ডিরেক্টর - ফাইনাল ইনফার্টিলিটি সেন্টার, অধ্যাপক (স্ত্রীরোগ বিভাগ)",
+                            "chamberTime":  "প্রতি শুক্রবার, দুপুর ১২:০০টা থেকে সন্ধ্যা ৬:০০টা",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-2",
+                            "name":  "সহযোগী অধ্যাপক ডা. অরুণাংশু রাহা অলোক",
+                            "title":  "মেডিসিন, পরিপাকতন্ত্র, লিভার ও ডায়াবেটিস বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস, বিসিএস (স্বাস্থ্য), এমডি (গ্যাস্ট্রোএন্টারোলজি)",
+                            "designation":  "সহযোগী অধ্যাপক - জাতীয় পরিপাকতন্ত্র রোগ ইনস্টিটিউট, ঢাকা",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১১:০০টা থেকে বিকেল ৫:০০টা",
+                            "image":  "https://i.ibb.co/TDNBDJ9g/29.png",
+                            "department":  "মেডিসিন"
+                        },
+                        {
+                            "id":  "fri-3",
+                            "name":  "সহযোগী অধ্যাপক ডা. মোঃ মঈনুল ইসলাম",
+                            "title":  "জেনারেল ও ল্যাপারোস্কোপিক সার্জন",
+                            "degrees":  "এমবিবিএস (ঢামেক), বিসিএস (স্বাস্থ্য), জেনারেল ও ল্যাপারোস্কোপিক সার্জারি বিশেষজ্ঞ",
+                            "designation":  "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১১:০০টা থেকে বিকেল ৫:০০টা",
+                            "image":  "https://i.ibb.co/nqFHNNdw/26.png",
+                            "department":  "সার্জারি"
+                        },
+                        {
+                            "id":  "fri-4",
+                            "name":  "ডা. মোঃ কায়সারুল ইসলাম",
+                            "title":  "হৃদরোগ, মেডিসিন ও ডায়াবেটিস বিশেষজ্ঞ",
+                            "degrees":  "ডি-কার্ড (বিএসএমএমইউ), বিসিএস (স্বাস্থ্য), কনসালট্যান্ট (কার্ডিওলজি)",
+                            "designation":  "কার্ডিওলজি কনসালট্যান্ট প্যানেলিস্ট",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৫:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/TDqCtxGT/37.png",
+                            "department":  "হৃদরোগ"
+                        },
+                        {
+                            "id":  "fri-5",
+                            "name":  "ডা. এস. এম. শফি-উল-বাসার",
+                            "title":  "অর্থোপেডিক ট্রমা সার্জন (হাড়, জয়েন্ট, বাতরোগ ও মেরুদণ্ড বিশেষজ্ঞ)",
+                            "degrees":  "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এমএস (অর্থোপেডিক সার্জারি)",
+                            "designation":  "নিটোর (পঙ্গু হাসপাতাল), ঢাকা",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৩:০০টা থেকে সন্ধ্যা ৭:০০টা",
+                            "image":  "https://i.ibb.co/7dsstv9m/07.png",
+                            "department":  "অর্থোপেডিক্স"
+                        },
+                        {
+                            "id":  "fri-6",
+                            "name":  "ডা. আবদুল্লাহ আল হামিম",
+                            "title":  "প্রসূতি, বন্ধ্যাত্ব, স্ত্রীরোগ বিশেষজ্ঞ ও সার্জন",
+                            "degrees":  "এমবিবিএস, বিসিএস (স্বাস্থ্য), এফসিপিএস (গাইনী এন্ড অবস)",
+                            "designation":  "কনসালট্যান্ট, গাইনী ও অবস বিভাগ",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/99s5nyX0/56.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-7",
+                            "name":  "ডা. মোঃ মনজুর মোরশেদ",
+                            "title":  "মেডিসিন, বক্ষব্যাধি, হৃদরোগ, গ্যাস্ট্রো-লিভার ও বাতজ্বর বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এফসিপিএস (মেডিসিন)",
+                            "designation":  "জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল, মহাখালী, ঢাকা",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১০:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/rfM8Jmmm/32.png",
+                            "department":  "মেডিসিন"
+                        },
+                        {
+                            "id":  "fri-8",
+                            "name":  "সহযোগী অধ্যাপক ডা. মোঃ মোরশেদ আলম",
+                            "title":  "নবজাতক, শিশু ও কিশোর রোগ বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস, ডিপিএইচ (পিজি হাসপাতাল), ডিসিএইচ (অস্ট্রেলিয়া), পিজিপিএন (যুক্তরাষ্ট্র), ইএসএন (জার্মানি), সিসিডি",
+                            "designation":  "সিটি মেডিকেল কলেজ হাসপাতাল, গাজীপুর",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/gM9T9D2N/51.png",
+                            "department":  "শিশুরোগ"
+                        },
+                        {
+                            "id":  "fri-9",
+                            "name":  "ডা. ফরিদুল আলম",
+                            "title":  "নাক, কান ও গলা বিশেষজ্ঞ এবং মাথা-গলা সার্জন",
+                            "degrees":  "এমবিবিএস, সিসিডি (বারডেম), ডিএলও (বিএসএমএমইউ), কনসালট্যান্ট (ইএনটি বিভাগ)",
+                            "designation":  "এনাম মেডিকেল কলেজ ও হাসপাতাল",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৫:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/JFWHhf46/17.png",
+                            "department":  "নাক, কান ও গলা"
+                        },
+                        {
+                            "id":  "fri-10",
+                            "name":  "ডা. মোঃ আজমির হোসেন রিয়েল",
+                            "title":  "নবজাতক ও শিশু রোগ বিশেষজ্ঞ (০ থেকে ১৮ বছর)",
+                            "degrees":  "এমবিবিএস, ডিসিএইচ, এফসিপিএস (এফপি), সাবেক বিশেষজ্ঞ (পিজি হাসপাতাল)",
+                            "designation":  "বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয় (বিএসএমএমইউ)",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১০:০০টা থেকে দুপুর ১:০০টা",
+                            "image":  "https://i.ibb.co/1x2y2Fv/44.png",
+                            "department":  "শিশুরোগ"
+                        },
+                        {
+                            "id":  "fri-11",
+                            "name":  "ডা. ফারহানা সুলতানা",
+                            "title":  "সোনোলজিস্ট ও ভ্রূণের জন্মগত ত্রুটি নির্ণয় (ফিটাল কনজেনিটাল অ্যানোমালি) স্ক্যান বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস (ডিএমইউ), (বিআইটিএমআইআর), টিভিএস ও ফিটাল স্ক্যানে বিশেষ প্রশিক্ষণপ্রাপ্ত",
+                            "designation":  "অ্যাডভান্সড আল্ট্রাসোনোগ্রাফি ডায়াগনস্টিকস প্যানেল",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১০:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/dJmFQDQD/45.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-12",
+                            "name":  "ডা. আল-ইমরান মাহমুদ",
+                            "title":  "হাড়, জয়েন্ট, বাতরোগ, মেরুদণ্ড ও অর্থোপেডিক ট্রমা সার্জন",
+                            "degrees":  "এমবিবিএস (ঢাবি), বিসিএস (স্বাস্থ্য), এফসিপিএস (পার্ট-২), সহকারী রেজিস্ট্রার",
+                            "designation":  "শহীদ আহসান উল্লাহ মাস্টার জেনারেল হাসপাতাল",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ১০:০০টা থেকে বিকেল ৩:০০টা",
+                            "image":  "https://i.ibb.co/Qjxdr8z6/03.png",
+                            "department":  "অর্থোপেডিক্স"
+                        },
+                        {
+                            "id":  "fri-13",
+                            "name":  "ডা. আমাতুর রহিম প্রিয়া",
+                            "title":  "স্ত্রীরোগ, প্রসূতি বিশেষজ্ঞ ও সার্জন",
+                            "degrees":  "এমবিবিএস (ঢাবি), পিজিটি (গাইনি ও অবস), সিএমইউ (সিএমইউডি)",
+                            "designation":  "অ্যাডভান্সড ফ্যামিলি হেলথ কনসালট্যান্ট",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ৯:০০টা থেকে বিকেল ৫:০০টা",
+                            "image":  "https://i.ibb.co/s9cs3M1G/12.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-14",
+                            "name":  "ডা. মনিরা ফেরদৌস",
+                            "title":  "স্ত্রীরোগ, প্রসূতি ও নারী রোগ বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস (সিএমইউ), ডিএমইউ (আল্ট্রা), পিজিটি (গাইনি ও অবস), পিজিটি (মেডিসিন)",
+                            "designation":  "ঢাকা মেডিকেল কলেজ ও হাসপাতাল",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৫:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/7tkhFP7d/02.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-15",
+                            "name":  "ডা. অমিত শিকদার",
+                            "title":  "মেডিসিন, চর্ম, যৌনরোগ, নাক-কান-গলা, ট্রমা ও ডায়াবেটিস চিকিৎসক",
+                            "degrees":  "এমবিবিএস, ঢাকা বিশ্ববিদ্যালয়, সিএমইউ, বিএমডিসি রেজি: A-108640",
+                            "designation":  "তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ ও হাসপাতাল",
+                            "chamberTime":  "প্রতি শুক্রবার, সকাল ৯:০০টা থেকে রাত ১০:০০টা",
+                            "image":  "https://i.ibb.co/v4tCzV4b/41.png",
+                            "department":  "মেডিসিন"
+                        },
+                        {
+                            "id":  "fri-16",
+                            "name":  "ডা. ফারজানা আমিন",
+                            "title":  "স্ত্রীরোগ, প্রসূতি ও ফ্যামিলি হেলথ বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস (ময়মনসিংহ মেডিকেল কলেজ), এমআরসিওজি, এফসিপিএস (গাইনি ও অবস)",
+                            "designation":  "শহীদ তাজউদ্দিন আহমদ মেডিকেল কলেজ হাসপাতাল",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৫:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/1JJ5x9s8/53.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "fri-17",
+                            "name":  "ডা. কামরুল হাসান",
+                            "title":  "চর্ম, যৌন ও অ্যালার্জি বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস (ঢাবি), সিএমইউ (আল্ট্রা), পিজিটি (স্কিন ও ভিডি), ডিডিভি (স্কিন ও ভিডি)",
+                            "designation":  "শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ",
+                            "chamberTime":  "প্রতি শুক্রবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/JRcMCgFh/40.png",
+                            "department":  "চর্মরোগ"
+                        }
+                    ]
+    },
+{
+  "day": "শনিবার",
   "doctors": [
     {
-      "id": "tue-1",
-      "name": "Assistant Prof. Dr. S.A. Anwar Ul Kadir",
-      "title": "Kidney, Prostate, Urinary Tract & Reproductive Disease Specialist & Surgeon",
-      "degrees": "Assistant Professor",
-      "designation": "Government Hospital Specialist Panel",
-      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Urology"
+      "id": "sat-1",
+      "name": "সহকারী অধ্যাপক ডা. মোঃ মিরাজ হোসেন",
+      "title": "মেডিসিন, পেইন মেডিসিন, অর্থোপেডিক্স ব্যথা, বাত ব্যথা ও ডায়াবেটিস বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, এমডি (পেইন মেডিসিন), ফেলোশিপ ইন্টারন্যাশনাল (ইন্ডিয়া)",
+      "designation": "সহকারী অধ্যাপক, খাজা ইউনুস আলী মেডিকেল কলেজ এন্ড হাসপাতাল, সিরাজগঞ্জ",
+      "chamberTime": "প্রতি শনিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/Wp4P5y0J/10.png",
+      "department": "মেডিসিন"
     },
     {
-      "id": "tue-2",
-      "name": "Assistant Prof. Dr. Nasrin Sultana Beauty",
-      "title": "Gynecology, Obstetrics & Infertility Specialist Surgeon",
-      "degrees": "MBBS (Dhaka), BCS (Health), MS (Gyne & Obs), MRCOG (London)",
-      "designation": "Shaheed Tajuddin Ahmad Medical College & Hospital",
-      "chamberTime": "Every Tuesday, 6:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "id": "sat-2",
+      "name": "ডা. মনিরুল ইসলাম",
+      "title": "কিডনি, কিডনিনালী, মূত্রনালী, মূত্রথলী, প্রোস্টেট ও যৌন রোগ বিশেষজ্ঞ এবং এন্ডোস্কপিক, ল্যাপারোস্কপিক ও লেজার সার্জন",
+      "degrees": "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এমএস (ইউরোলজি)",
+      "designation": "ইউরোলজিস্ট এন্ড এন্ড্রোলজিস্ট, ন্যাশনাল ইনস্টিটিউট অব কিডনী ডিজিজেস এন্ড ইউরোলজি, শেরে-ই-বাংলা নগর, ঢাকা",
+      "chamberTime": "প্রতি শনিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/xKrLBfrg/55.png",
+      "department": "ইউরোলজি"
     },
     {
-      "id": "tue-3",
-      "name": "Dr. Kazi Md. Zafrul Haque",
-      "title": "Medicine, Cardiology, Chest Diseases & Diabetes Specialist",
-      "degrees": "MBBS, D-Card (NICVD), BCS (Health), Senior Consultant (Cardiology)",
-      "designation": "National Institute of Cardiovascular Diseases, Sher-e-Bangla Nagar, Dhaka",
-      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Cardiology"
+      "id": "sat-3",
+      "name": "ডা. সালমা বেগম",
+      "title": "গাইনী, প্রসূতি, স্ত্রীরোগ ও শিশু বিশেষজ্ঞ এবং সার্জন (জেনারেল প্র্যাকটিশনার)",
+      "degrees": "এমবিবিএস (ঢাকা), পিজিটি (গাইনী এন্ড অবস), পিজিটি (শিশু), পিজিটি (সার্জারি এন্ড ব্রেস্ট)",
+      "designation": "বাংলাদেশ মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি শনিবার, বিকাল ৩:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/8nCz93mh/09.png",
+      "department": "স্ত্রীরোগ"
     },
     {
-      "id": "tue-4",
-      "name": "Dr. Mahbub Alam Sohag",
-      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
-      "degrees": "MBBS (DU), DLO (BSMMU), Residential Surgeon (ENT Dept)",
-      "designation": "ENT & Head-Neck Cancer Hospital, Dhaka",
-      "chamberTime": "Every Tuesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "ENT"
+      "id": "sat-4",
+      "name": "ডাঃ ডি.এ. সাঈদ (সাব্বির)",
+      "title": "মেডিসিন ও ডায়াবেটিস বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস (এম.এ.সি), এফসিপিএস (মেডিসিন)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি শনিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/TxHBcRzh/20.png",
+      "department": "মেডিসিন"
     },
     {
-      "id": "tue-5",
-      "name": "Dr. Al-Imran Mahmud",
-      "title": "Bone, Joint, Rheumatism, Spine & Orthopedic Trauma Surgeon",
-      "degrees": "MBBS (DU), BCS (Health), MS (Orthopedic Surgery), FCPS (Surgery Part-2), Assistant Registrar",
-      "designation": "Shaheed Ahsan Ullah Master General Hospital",
-      "chamberTime": "Every Tuesday, 5:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Orthopedics"
+      "id": "sat-5",
+      "name": "ডা. কামরুল হাসান",
+      "title": "চর্ম, যৌন ও এলার্জি রোগ বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, সি.এম.ইউ (আল্ট্রা), পি.জি.টি (স্কিন এন্ড ভি.ডি), ডি.ভি.ডি (স্কিন এন্ড ভি.ডি)",
+      "designation": "শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ",
+      "chamberTime": "প্রতি শনিবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/JRcMCgFh/40.png",
+      "department": "চর্মরোগ"
     },
     {
-      "id": "tue-6",
-      "name": "Dr. Rita Akter",
-      "title": "Gynecology, Obstetrics & Ultrasonologist",
-      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
-      "designation": "Dhaka Medical College Hospital",
-      "chamberTime": "Every Tuesday, 11:00 AM to 2:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "id": "sat-6",
+      "name": "ডা. রিতা আক্তার",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষজ্ঞ এবং আল্ট্রাসনোলজিস্ট",
+      "degrees": "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), পিজিটি (গাইনী এন্ড অবস), ডিপ্লোমা এন্ড মেডিকেল (আল্ট্রাসনোগ্রাফি)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি শনিবার, সকাল ১১:০০টা থেকে দুপুর ২:০০টা",
+      "image": "https://i.ibb.co/G3Mh2LRy/08.png",
+      "department": "স্ত্রীরোগ"
     },
     {
-      "id": "tue-7",
-      "name": "Dr. Imtiaz Ahmed Bhuiyan",
-      "title": "Skin, Sex & Allergy Disease Specialist",
-      "degrees": "MBBS, MACP (America), DDV (Skin-Sex), CCD (BIRDEM)",
-      "designation": "Dhaka Medical College & Hospital",
-      "chamberTime": "Every Tuesday, 5:00 PM to 6:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Dermatology"
+      "id": "sat-7",
+      "name": "ডা. মোঃ আল-আমিন",
+      "title": "মেডিসিন, চর্ম, যৌন, নাক, কান, গলা, শিশু রোগ-সার্জারী অভিজ্ঞ ও ডায়াবেটিক বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস, সি.এম.ইউ, সিসিডি (ডায়াবেটোলজি) বারডেম",
+      "designation": "তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ এন্ড হাসপাতাল",
+      "chamberTime": "প্রতি শনিবার, সকাল ৯:০০টা থেকে রাত ১০:০০টা",
+      "image": "https://i.ibb.co/TqMx74kj/42.png",
+      "department": "মেডিসিন"
     }
   ]
 },
 {
-  "day": "Wednesday (বুধবার)",
+  "day": "রবিবার",
+  "doctors": [
+    {
+      "id": "sun-1",
+      "name": "সহকারী অধ্যাপক ডাঃ মোঃ মাহাবুল আলম",
+      "title": "নাক, কান ও গলা বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, ডিএলও (বিএসএমএমইউ)",
+      "designation": "সহকারী অধ্যাপক (নাক, কান ও গলা বিভাগ), সিটি মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি রবিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://picsum.photos",
+      "department": "নাক, কান ও গলা"
+    },
+    {
+      "id": "sun-2",
+      "name": "ডাঃ রিতা আক্তার",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষ অভিজ্ঞ ও আল্ট্রাসনোলজিস্ট",
+      "degrees": "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), (পিজিটি) গাইনী এন্ড অবস, ডিপ্লোমা এন্ড মেডিকেল (আল্ট্রাসনোগ্রাফিক এসইউবি সোনোলজিস্ট)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি রবিবার, সকাল ১১:০০টা থেকে দুপুর ২:০০টা",
+      "image": "https://i.ibb.co/G3Mh2LRy/08.png",
+      "department": "স্ত্রীরোগ"
+    },
+    {
+      "id": "sun-3",
+      "name": "ডাঃ আমাতুর রহিম প্রিয়া",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষ অভিজ্ঞ ও সোনোলজিস্ট",
+      "degrees": "এম.বি.বি.এস (ডি.এইচ.ইউ), পি.জি.টি (গাইনী এবং অবিএস), সি.এম.ইউ (সি.এম.ইউ.ডি)",
+      "designation": "",
+      "chamberTime": "প্রতি রবিবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/s9cs3M1G/12.png",
+      "department": "স্ত্রীরোগ"
+    },
+    {
+      "id": "sun-4",
+      "name": "ডাঃ মোঃ আবু ফাত্তাহ জাহিন",
+      "title": "মেডিসিন, চর্ম, যৌন, নাক, কান, গলা, মা ও শিশু রোগ-সার্জারী অভিজ্ঞ ও ডায়াবেটিক বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস (ঢাকা), সিএমইউ (আল্ট্রা), সিসিডি (বারডেম)",
+      "designation": "সহকারী রেজিস্ট্রার (ডিপার্টমেন্ট অব মেডিসিন), তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ এন্ড হাসপাতাল",
+      "chamberTime": "প্রতি রবিবার, সকাল ৯:০০টা থেকে রাত ১০:০০টা",
+      "image": "https://i.ibb.co/tPMtNHBC/39.png",
+      "department": "মেডিসিন"
+    },
+    {
+      "id": "sun-5",
+      "name": "ডাঃ মোঃ মেহেদী হাসান",
+      "title": "মেডিসিন, হৃদরোগ, বক্ষব্যাধি ও ডায়াবেটিস বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস (সিইউ), সিসিডি (বারডেম), এমডি (কার্ডিওলজি), বিসিএস (স্বাস্থ্য)",
+      "designation": "জাতীয় হৃদরোগ ইনস্টিটিউট হাসপাতাল ও শেরে বাংলা নগর, ঢাকা-১২০৭",
+      "chamberTime": "প্রতি রবিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/B5JdtLx3/34.png",
+      "department": "হৃদরোগ"
+    },
+    {
+      "id": "sun-6",
+      "name": "ডাঃ সঞ্চিতা ভৌমিক",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষজ্ঞ সার্জন",
+      "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য), এমসিপিএস, এফসিপিএস (গাইনী এন্ড অবস), ব্রেস্ট ও জরায়ু ক্যান্সার উপরে বিশেষ প্রশিক্ষণ প্রাপ্ত",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল (ক্যান্সার ইউনিট)",
+      "chamberTime": "প্রতি রবিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/XHgqQDT/54.png",
+      "department": "স্ত্রীরোগ"
+    },
+    {
+      "id": "sun-7",
+      "name": "সহকারী অধ্যাপক ডাঃ মোফাজ্জলুল হক",
+      "title": "অর্থোপেডিক সার্জন, হাড় জোড়া, আঘাত ও বিকলাঙ্গ বিশেষজ্ঞ",
+      "degrees": "এম.ডি.পিএইচ.ডি (অর্থো)/রাশিয়া",
+      "designation": "সহকারী অধ্যাপক, অর্থোপেডিক বিভাগ, সিটি মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি রবিবার, বিকাল ৩:০০টা থেকে সন্ধ্যা ৬:০০টা",
+      "image": "https://i.ibb.co/k600DvKX/25.png",
+      "department": "অর্থোপেডিক্স"
+    }
+  ]
+},
+  {
+  "day": "সোমবার",
+  "doctors": [
+    {
+      "id": "mon-1",
+      "name": "ডা. কামরুল হাসান",
+      "title": "চর্ম, যৌন ও এলার্জি রোগ বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস (ডি.এইচ.ইউ), সি.এম.ইউ (আল্ট্রা), পি.জি.টি (স্কিন এন্ড ভি.ডি), ডি.ভি.ডি (স্কিন এন্ড ভি.ডি)",
+      "designation": "শহীদ তাজউদ্দিন আহমেদ মেডিকেল কলেজ",
+      "chamberTime": "প্রতি সোমবার বিকাল ৪টা হতে রাত ৮টা পর্যন্ত",
+      "image": "https://i.ibb.co/JRcMCgFh/40.png",
+      "department": "চর্মরোগ"
+    },
+    {
+      "id": "mon-2",
+      "name": "ডাঃ রিতা আক্তার",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষ অভিজ্ঞ ও আল্ট্রাসনোলজিস্ট",
+      "degrees": "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), (পিজিটি) গাইনী এন্ড অবস, ডিপ্লোমা এন্ড মেডিকেল (আল্ট্রাসনোগ্রাফিক এসইউবি সোনোলজিস্ট)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি সোমবার সকাল ১১টা হতে দুপুর ২টা পর্যন্ত",
+      "image": "https://i.ibb.co/G3Mh2LRy/08.png",
+      "department": "স্ত্রীরোগ"
+    },
+    {
+      "id": "mon-3",
+      "name": "ডা. মোঃ আল-আমিন",
+      "title": "মেডিসিন, চর্ম, যৌন, নাক, কান, গলা, মা ও শিশু রোগ-সার্জারী অভিজ্ঞ ও ডায়াবেটিক বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস, সিএমইউ, সিসিডি (ডায়াবেটোলজি) বারডেম",
+      "designation": "তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ এন্ড হাসপাতাল",
+      "chamberTime": "প্রতি সোমবার সকাল ৯টা হতে রাত ১০টা পর্যন্ত",
+      "image": "https://i.ibb.co/TqMx74kj/42.png",
+      "department": "মেডিসিন"
+    },
+    {
+      "id": "mon-4",
+      "name": "ডাঃ জসীম উদ্দিন",
+      "title": "মেডিসিন, বাতব্যথা ও অর্থোপেডিক চিকিৎসক",
+      "degrees": "এম.বি.বি.এস (ডিইউ), এম.সি.জি.পি (মেডিসিন), সি.এম.ইউ (ইউএসজি), পি.জি.টি (অর্থোপেডিক)",
+      "designation": "শহীদ তাজউদ্দিন আহমেদ মেডিকেল কলেজ হাসপাতাল, গাজীপুর",
+      "chamberTime": "প্রতি সোমবার বিকাল ৪টা হতে রাত ৮টা পর্যন্ত",
+      "image": "https://i.ibb.co/N6qBff97/Lab-Aid-Hospital-Handbill-compressed-30.png",
+      "department": "মেডিসিন"
+    },
+    {
+      "id": "mon-5",
+      "name": "অধ্যাপক ডাঃ শাবীন আফরীন (কাজল)",
+      "title": "গাইনী, প্রসূতি, বন্ধ্যাত্ব, স্ত্রীরোগ বিশেষজ্ঞ ও সার্জন",
+      "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য), এফসিপিএস (গাইনী ও অবস)",
+      "designation": "অধ্যাপক ও ইউনিট প্রধান, ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি সোমবার বিকাল ৪টা হতে রাত ৮টা পর্যন্ত",
+      "image": "https://picsum.photos",
+      "department": "স্ত্রীরোগ"
+    },
+    {
+      "id": "mon-6",
+      "name": "সহযোগী অধ্যাপক ডাঃ মোঃ মঈনুল ইসলাম",
+      "title": "জেনারেল ও ল্যাপারোস্কপিক সার্জন",
+      "degrees": "এমবিবিএস (ডিএমসি), বিসিএস (স্বাস্থ্য), সিসিডি (বারডেম), এফসিপিএস (সার্জারী)",
+      "designation": "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান (সার্জারী), শহীদ তাজউদ্দিন আহমেদ মেডিকেল কলেজ ও হাসপাতাল",
+      "chamberTime": "প্রতি সোমবার বিকাল ৩টা হতে রাত ৮টা পর্যন্ত",
+      "image": "https://i.ibb.co/nqFHNNdw/26.png",
+      "department": "সার্জারি"
+    },
+    {
+      "id": "mon-7",
+      "name": "ডাঃ মোঃ মনজুর মোরশেদ",
+      "title": "মেডিসিন, বক্ষব্যাধি, হৃদরোগ, গ্যাস্ট্রোলিভার ও বাতজ্বর বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এফসিপিএস (মেডিসিন)",
+      "designation": "জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল, মহাখালী, ঢাকা",
+      "chamberTime": "প্রতি সোমবার বিকাল ৩টা হতে রাত ১০টা পর্যন্ত",
+      "image": "https://i.ibb.co/rfM8Jmmm/32.png",
+      "department": "মেডিসিন"
+    }
+  ]
+},
+    {
+        "day":  "মঙ্গলবার",
+        "doctors":  [
+                        {
+                            "id":  "tue-1",
+                            "name":  "সহকারী অধ্যাপক ডা. এস. এ. আনোয়ার উল কাদির",
+                            "title":  "কিডনি, প্রোস্টেট, মূত্রনালী ও প্রজননতন্ত্রের রোগ বিশেষজ্ঞ এবং সার্জন",
+                            "degrees":  "সহকারী অধ্যাপক",
+                            "designation":  "সরকারি হাসপাতালের বিশেষজ্ঞ প্যানেল",
+                            "chamberTime":  "প্রতি মঙ্গলবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/mVmz2m0D/36.png",
+                            "department":  "ইউরোলজি"
+                        },
+                        {
+                            "id":  "tue-2",
+                            "name":  "সহকারী অধ্যাপক ডা. নাসরিন সুলতানা বিউটি",
+                            "title":  "স্ত্রীরোগ, প্রসূতি ও বন্ধ্যাত্ব বিশেষজ্ঞ সার্জন",
+                            "degrees":  "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এমএস (গাইনি ও অবস), এমআরসিওজি (লন্ডন)",
+                            "designation":  "শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ ও হাসপাতাল",
+                            "chamberTime":  "প্রতি মঙ্গলবার, সন্ধ্যা ৬:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/PGPFbQ3C/30.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                        {
+                            "id":  "tue-3",
+                            "name":  "ডা. কাজী মোঃ জাফরুল হক",
+                            "title":  "মেডিসিন, হৃদরোগ, বক্ষব্যাধি ও ডায়াবেটিস বিশেষজ্ঞ",
+                            "degrees":  "এমবিবিএস, ডি-কার্ড (এনআইসিভিডি), বিসিএস (স্বাস্থ্য), সিনিয়র কনসালট্যান্ট (কার্ডিওলজি)",
+                            "designation":  "জাতীয় হৃদরোগ ইনস্টিটিউট, শের-ই-বাংলা নগর, ঢাকা",
+                            "chamberTime":  "প্রতি মঙ্গলবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/xtbSkfgT/33.png",
+                            "department":  "হৃদরোগ"
+                        },
+                        {
+                            "id":  "tue-4",
+                            "name":  "ডা. মাহবুব আলম সোহাগ",
+                            "title":  "নাক, কান ও গলা (ইএনটি) বিশেষজ্ঞ এবং মাথা-গলা সার্জন",
+                            "degrees":  "এমবিবিএস (ঢাবি), ডিএলও (বিএসএমএমইউ), রেসিডেন্ট সার্জন (ইএনটি বিভাগ)",
+                            "designation":  "ইএনটি ও হেড-নেক ক্যান্সার হাসপাতাল, ঢাকা",
+                            "chamberTime":  "প্রতি মঙ্গলবার, বিকেল ৪:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/vvs0sVC5/06.png",
+                            "department":  "নাক, কান ও গলা"
+                        },
+                        {
+                            "id":  "tue-5",
+                            "name":  "ডা. আল-ইমরান মাহমুদ",
+                            "title":  "হাড়, জয়েন্ট, বাতরোগ, মেরুদণ্ড ও অর্থোপেডিক ট্রমা সার্জন",
+                            "degrees":  "এমবিবিএস (ঢাবি), বিসিএস (স্বাস্থ্য), এমএস (অর্থোপেডিক সার্জারি), এফসিপিএস (সার্জারি, পার্ট-২), সহকারী রেজিস্ট্রার",
+                            "designation":  "শহীদ আহসান উল্লাহ মাস্টার জেনারেল হাসপাতাল",
+                            "chamberTime":  "প্রতি মঙ্গলবার, বিকেল ৫:০০টা থেকে রাত ৮:০০টা",
+                            "image":  "https://i.ibb.co/Qjxdr8z6/03.png",
+                            "department":  "অর্থোপেডিক্স"
+                        },
+                        {
+                            "id":  "tue-6",
+                            "name":  "ডা. রিতা আক্তার",
+                            "title":  "স্ত্রীরোগ, প্রসূতি বিশেষজ্ঞ ও আল্ট্রাসোনোলজিস্ট",
+                            "degrees":  "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), পিজিটি (গাইনি ও অবস)",
+                            "designation":  "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+                            "chamberTime":  "প্রতি মঙ্গলবার, সকাল ১১:০০টা থেকে দুপুর ২:০০টা",
+                            "image":  "https://i.ibb.co/G3Mh2LRy/08.png",
+                            "department":  "স্ত্রীরোগ"
+                        },
+                       {
+                            "id": "tue-7",
+                            "name": "ডাঃ মোঃ মনিরুজ্জামান",
+                            "title": "চর্ম, যৌন, চুল, নখ ও এলার্জি রোগ বিশেষজ্ঞ",
+                            "degrees": "এম.বি.বি.এস (ডি.এইচ.ইউ), ডি.ডি.ভি (ইব্রাহিম), এম.এস.পি.আই (আমেরিকা), সিসিডি (বারডেম), এ.এফ.সি.পি.এস (আমেরিকা), পি.জি.টি (স্কিন), ডিপ্লোমা ইন ক্লিনিক্যাল ডার্মাটোলজি (ইংল্যান্ড), ক্লিনিক্যাল এন্ড অ্যাস্থেটিক ডার্মাটোলজি (কোরিয়া)",
+                            "designation": "কনসালটেন্ট, ব্র্যাক স্বাস্থ্যকেন্দ্র, গাজীপুর",
+                            "chamberTime": "প্রতি মঙ্গলবার, বিকাল ৪টা থেকে রাত ৮টা পর্যন্ত",
+                            "image": "https://i.ibb.co/MyBPjcNS/57.png",
+                            "department": "চর্মরোগ"
+                    }
+                    ]
+    },
+   {
+  "day": "বুধবার",
   "doctors": [
     {
       "id": "wed-1",
-      "name": "Dr. Md. Mehedi Hassan Ronu",
-      "title": "Medicine, Heart, Chest Diseases & Diabetes Specialist",
-      "degrees": "MBBS (Shaheed Suhrawardy Medical College), BCS (Health), CPD (Diabetology), MD Resident Cardiology",
-      "designation": "National Institute of Cardiovascular Diseases & Hospital",
-      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Cardiology"
+      "name": "ডা. কামরুল হাসান",
+      "title": "চর্ম, যৌন ও এলার্জি রোগ বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস (ডি.ইউ), সি.এম.ইউ (আল্ট্রা), পি.জি.টি (স্কিন এন্ড ভি.ডি), ডি.ডি.ভি (স্কিন এন্ড ভি.ডি)",
+      "designation": "শহীদ তাজউদ্দিন আহমেদ মেডিকেল কলেজ",
+      "chamberTime": "প্রতি বুধবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/JRcMCgFh/40.png",
+      "department": "চর্মরোগ"
     },
     {
       "id": "wed-2",
-      "name": "Dr. Tahmina Binte Firoza (Taniya)",
-      "title": "Gynecology Specialist & Surgeon",
-      "degrees": "MBBS, CMU, FCPS (Part-1), BMDC Reg No: 95017",
-      "designation": "East West Medical College Hospital, Uttara, Dhaka",
-      "chamberTime": "Every Wednesday, 4:00 PM to 7:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "name": "ডা. রিতা আক্তার",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষ অভিজ্ঞ ও আল্ট্রাসনোলজিস্ট",
+      "degrees": "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), পিজিটি (গাইনী এন্ড অবস), ডিপ্লোমা এন্ড মেডিকেল (আল্ট্রাসনোগ্রাফি)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি বুধবার, সকাল ১১:০০টা থেকে দুপুর ২:০০টা",
+      "image": "https://i.ibb.co/G3Mh2LRy/08.png",
+      "department": "স্ত্রীরোগ"
     },
     {
       "id": "wed-3",
-      "name": "Dr. Md. Tanvin Islam Roni",
-      "title": "Medicine, Orthopedics, Diabetes & Rheumatic Pain Practitioner",
-      "degrees": "MBBS (DU), CCD (BIRDEM), PGT (Orthopedics & Medicine)",
-      "designation": "Uttara Crescent Hospital & Diagnostic Center",
-      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Orthopedics"
+      "name": "ডা. মোঃ আল-আমিন",
+      "title": "মেডিসিন, চর্ম, যৌন, নাক, কান, গলা, মা ও শিশু রোগ-সার্জারী অভিজ্ঞ ও ডায়াবেটিক বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, সিএমইউ, সিসিডি (ডায়াবেটোলজি) বারডেম",
+      "designation": "তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ এন্ড হাসপাতাল",
+      "chamberTime": "প্রতি বুধবার, সকাল ৯:০০টা থেকে রাত ১০:০০টা",
+      "image": "https://i.ibb.co/TqMx74kj/42.png",
+      "department": "মেডিসিন"
     },
     {
       "id": "wed-4",
-      "name": "Dr. Kamrul Hasan",
-      "title": "Skin, Sex & Allergy Specialist",
-      "degrees": "MBBS (DU), CMU (Ultra), PGT (Skin & DD), DDV (Skin & DD), BMDC Reg: A-130777",
-      "designation": "Shaheed Tajuddin Ahmad Medical College",
-      "chamberTime": "Every Wednesday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Dermatology"
+      "name": "সহযোগী অধ্যাপক ডা. মোরশেদ আলম",
+      "title": "নবজাতক, শিশু ও কিশোর রোগ বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, ডিসিএইচ (সিটি হাসপাতাল), এফসিপিএস (পেডিয়াট্রিক্স), পিজিপিএন (ইউএসএ), ইএসএন (জার্মানি)",
+      "designation": "সহযোগী অধ্যাপক, সিটি মেডিকেল কলেজ হাসপাতাল, গাজীপুর",
+      "chamberTime": "প্রতি বুধবার, বৃহস্পতিবার ও রবিবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/gM9T9D2N/51.png",
+      "department": "শিশুরোগ"
     },
     {
       "id": "wed-5",
-      "name": "Dr. Rita Akter",
-      "title": "Gynecology, Obstetrics & Ultrasonologist",
-      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
-      "designation": "Dhaka Medical College Hospital",
-      "chamberTime": "Every Wednesday, 11:00 AM to 2:00 PM",
+      "name": "ডা. মাহবুব হাসান",
+      "title": "মেডিসিন, থাইরয়েড, হরমোন ও ডায়াবেটিস বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস (ডি.ইউ), এফসিপিএস (মেডিসিন), এমডি (এন্ডোক্রাইনোলজি)",
+      "designation": "বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয় (বিএসএমএমইউ) ও এস স্কয়ার হাসপাতাল, ঢাকা",
+      "chamberTime": "প্রতি বুধবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
       "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "department": "এন্ডোক্রাইনোলজি"
     },
     {
       "id": "wed-6",
-      "name": "Dr. Md. Al-Amin",
-      "title": "Medicine, Diabetes & Sonology Specialist",
-      "degrees": "MBBS, CMU, CCD (Diabetology) BIRDEM, BMDC: A-87648",
-      "designation": "Tairunnessa Memorial Medical College & Hospital",
-      "chamberTime": "Every Wednesday, 9:00 AM to 10:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
+      "name": "ডা. তাহমিনা বিনতে ফিরোজা (তানিয়া)",
+      "title": "গাইনী, প্রসূতি, বন্ধ্যাত্ব, স্ত্রীরোগ বিশেষজ্ঞ ও সার্জন",
+      "degrees": "এমবিবিএস (ঢাকা), সিএমইউ (আল্ট্রা), এমসিপিএস (পার্ট-১) (গাইনী এন্ড অবস)",
+      "designation": "শহীদ তাজউদ্দিন আহমেদ মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি বুধবার, বিকাল ৫:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/CpgGysD9/24.png",
+      "department": "স্ত্রীরোগ"
     },
     {
       "id": "wed-7",
-      "name": "Associate Prof. Dr. Morshed Alam",
-      "title": "Neonatal, Child & Adolescent Disease Specialist",
-      "degrees": "MBBS, DPH (PG Hospital), DCH (Australia), PGPN (USA), ESN (Germany), CCD",
-      "designation": "City Medical College Hospital, Gazipur",
-      "chamberTime": "Every Wednesday & Thursday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Pediatrics"
+      "name": "ডা. মোঃ তানভীন ইসলাম রনি",
+      "title": "মেডিসিন, অর্থোপেডিক্স, ডায়াবেটিক ও বাত ব্যথা বিশেষ অভিজ্ঞ",
+      "degrees": "এমবিবিএস (ডি.ইউ), সিসিডি (বারডেম), পিজিটি (অর্থোপেডিক্স ও মেডিসিন)",
+      "designation": "উত্তরা ক্রিসেন্ট হাসপাতাল ও ডায়াগনস্টিক সেন্টার",
+      "chamberTime": "প্রতি বুধবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/4w4kN30S/38.png",
+      "department": "মেডিসিন"
     }
   ]
 },
-{
-  "day": "Thursday (বৃহস্পতিবার)",
+ {
+  "day": "বৃহস্পতিবার",
   "doctors": [
     {
       "id": "thu-1",
-      "name": "Assistant Prof. Dr. Md. Hasanul Haq (Nipun)",
-      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
-      "degrees": "Assistant Professor, M.D",
-      "designation": "Government Medical College Panelist",
-      "chamberTime": "Every Thursday, 4:00 PM to 7:00 PM",
-      "image": "https://picsum.photos",
-      "department": "ENT"
+      "name": "ডা. সুরাইয়া বুলবুল",
+      "title": "স্ত্রীরোগ, বন্ধ্যাত্ব, প্রসূতি, গাইনোকোলজি ও উচ্চঝুঁকিপূর্ণ গর্ভাবস্থা বিশেষজ্ঞ সার্জন",
+      "degrees": "এমবিবিএস (ঢাকা মেডিকেল কলেজ), ডিজিও (ঢাকা মেডিকেল কলেজ হাসপাতাল), এফসিপিএস (অবস্ এন্ড গাইনী), এফসিপিএস (ফাইনাল)",
+      "designation": "কনসালটেন্ট, গাইনী বিভাগ, শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি বৃহস্পতিবার, বিকাল ৩:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/pBFSJZs5/31.png",
+      "department": "স্ত্রীরোগ"
     },
     {
       "id": "thu-2",
-      "name": "Dr. Tahmina Binte Firoza (Taniya)",
-      "title": "Gynecology Specialist & Surgeon",
-      "degrees": "MBBS, CMU, FCPS (Part-1), BMDC Reg No: 95017",
-      "designation": "East West Medical College Hospital, Uttara, Dhaka",
-      "chamberTime": "Every Thursday, 4:00 PM to 7:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "name": "ডা. কাজী ফয়জুর রহমান",
+      "title": "মেডিসিন, রক্তচাপ, গ্যাস্ট্রোলিভার ও বাতরোগ বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস (ডিইউ), সি.সি.ডি (বারডেম), এফ.সি.জি.পি (ফ্যামিলি মেডিসিন)",
+      "designation": "ইস্ট ওয়েস্ট মেডিকেল কলেজ হাসপাতাল, উত্তরা, ঢাকা",
+      "chamberTime": "প্রতি বৃহস্পতিবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/p6VL01GK/43.png",
+      "department": "মেডিসিন"
     },
     {
       "id": "thu-3",
-      "name": "Dr. Kazi Faejur Rahman",
-      "title": "Medicine, Chest Diseases, Gastro-liver & Rheumatic Fever Specialist",
-      "degrees": "MBBS (DU), CCD (BIRDEM), FCGP (Family Medicine)",
-      "designation": "East West Medical College Hospital, Uttara, Dhaka",
-      "chamberTime": "Every Thursday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
+      "name": "সহযোগী অধ্যাপক ডা. মোরশেদ আলম",
+      "title": "নবজাতক, শিশু ও কিশোর রোগ বিশেষজ্ঞ",
+      "degrees": "এমবিবিএস, ডিসিএইচ (পিজি হাসপাতাল), ডিসিএইচ (অস্ট্রেলিয়া), পিজিপিএন (ইউ.এস.এ), ইএনএস (জার্মানি)",
+      "designation": "সহযোগী অধ্যাপক, সিটি মেডিকেল কলেজ হাসপাতাল, গাজীপুর",
+      "chamberTime": "প্রতি শনিবার, সোমবার, বৃহস্পতিবার বিকাল ৪:০০টা থেকে রাত ৮:০০টা এবং রবিবার, বুধবার, শুক্রবার সন্ধ্যা ৭:০০টা থেকে রাত ১০:০০টা",
+      "image": "https://i.ibb.co/gM9T9D2N/51.png",
+      "department": "শিশুরোগ"
     },
     {
       "id": "thu-4",
-      "name": "Dr. Rita Akter",
-      "title": "Gynecology, Obstetrics & Ultrasonologist",
-      "degrees": "MBBS (Dhaka), CCD (BIRDEM), PGT (Gyne & Obs)",
-      "designation": "Dhaka Medical College Hospital",
-      "chamberTime": "Every Thursday, 11:00 AM to 2:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
+      "name": "ডা. রিতা আক্তার",
+      "title": "গাইনী, প্রসূতি ও স্ত্রীরোগ বিশেষ অভিজ্ঞ এবং আল্ট্রাসোনোলজিস্ট",
+      "degrees": "এমবিবিএস (ঢাকা), সিসিডি (বারডেম), পিজিটি (গাইনী এন্ড অবস), ট্রপোমা এন্ড মেডিকেল (আল্ট্রাসোনোগ্রাফি এসোসিয়েট সোনোলজিস্ট)",
+      "designation": "ঢাকা মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি বৃহস্পতিবার, সকাল ১১:০০টা থেকে দুপুর ২:০০টা",
+      "image": "https://i.ibb.co/G3Mh2LRy/08.png",
+      "department": "স্ত্রীরোগ"
     },
     {
       "id": "thu-5",
-      "name": "Dr. Md. Abu Fattah Jahin",
-      "title": "Medicine, Skin, Sex, ENT, Injury, Rheumatic Pain & Diabetes Specialist",
-      "degrees": "MBBS (Dhaka), CMU (Ultra), CCD (BIRDEM), Assistant Registrar (Medicine)",
-      "designation": "Tairunnessa Memorial Medical College & Hospital, BMDC No: A-19204",
-      "chamberTime": "Every Thursday, 9:00 AM to 10:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
+      "name": "ডা. মোঃ আবু ফাত্তাহ জাহিন",
+      "title": "মেডিসিন, চর্ম, যৌন, নাক, কান, গলা, বাত ও শিশু রোগ সার্জারি অভিজ্ঞ ও ডায়াবেটিস বিশেষজ্ঞ",
+      "degrees": "এম.বি.বি.এস (ঢাকা), সিএমইউ (আল্ট্রা), সিসিডি (বারডেম)",
+      "designation": "সহকারী রেজিস্ট্রার (ডিপার্টমেন্ট অব মেডিসিন), তায়রুন্নেছা মেমোরিয়াল মেডিকেল কলেজ এন্ড হাসপাতাল, বিএমডিসি রেজি: এ-১৯২০৪",
+      "chamberTime": "প্রতি বৃহস্পতিবার, সকাল ৯:০০টা থেকে রাত ১০:০০টা",
+      "image": "https://i.ibb.co/tPMtNHBC/39.png",
+      "department": "মেডিসিন"
     },
     {
       "id": "thu-6",
-      "name": "Dr. M. Jobayer Hossain",
-      "title": "Medicine, Rheumatic Pain, Diabetes, General Surgery & Pediatrics Physician",
-      "degrees": "MBBS (Dhaka), CMU, PGT (Medicine)",
-      "designation": "Gonoshasthaya Samaj Vittik Medical College Hospital",
-      "chamberTime": "Every Wednesday & Thursday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
-    }
-  ]
-},
-{
-  "day": "Friday (শুক্রবার)",
-  "doctors": [
-    {
-      "id": "fri-1",
-      "name": "Prof. Dr. Nilufa Yasmin",
-      "title": "Gynecology, Obstetrics, Infertility Specialist & Surgeon",
-      "degrees": "MBBS, BCS (Health), MS (Gyne), IVF (Mumbai, India) Trained",
-      "designation": "Medical Director - Final Infertility Center, Professor (Gynecology Dept)",
-      "chamberTime": "Every Friday, 12:00 PM to 6:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
-    },
-    {
-      "id": "fri-2",
-      "name": "Associate Prof. Dr. Arunangshu Raha Alok",
-      "title": "Medicine, Gastrointestinal, Liver & Diabetes Specialist",
-      "degrees": "MBBS, BCS (Health), MD (Gastroenterology)",
-      "designation": "Associate Professor - National Institute of Digestive Diseases, Dhaka",
-      "chamberTime": "Every Friday, 10:00 AM to 5:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
-    },
-    {
-      "id": "fri-3",
-      "name": "Associate Prof. Dr. Md. Mainul Islam",
-      "title": "General & Laparoscopic Surgeon",
-      "degrees": "MBBS (DMC), BCS (Health), General & Laparoscopic Surgical Specialist",
-      "designation": "Associate Professor & Departmental Head",
-      "chamberTime": "Every Friday, 10:00 AM to 5:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Surgery"
-    },
-    {
-      "id": "fri-4",
-      "name": "Dr. Md. Kaisarul Islam",
-      "title": "Heart Disease, Medicine & Diabetes Specialist",
-      "degrees": "D-Card (BSMMU), BCS (Health), Consultant Cardiology",
-      "designation": "Cardiology Consultant Panelist",
-      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Cardiology"
-    },
-    {
-      "id": "fri-5",
-      "name": "Dr. S.M. Shafi-Ul-Bashar",
-      "title": "Orthopedic Trauma Surgeon (Bone, Joint, Rheumatism, Spine Specialist)",
-      "degrees": "MBBS (Dhaka), BCS (Health), MS (Orthopedic Surgery)",
-      "designation": "NITOR (Pangu Hospital), Dhaka",
-      "chamberTime": "Every Friday, 3:00 PM to 7:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Orthopedics"
-    },
-    {
-      "id": "fri-6",
-      "name": "Assistant Prof. Dr. Fatema-Tuz-Zohura",
-      "title": "Skin, Sexual Diseases, Allergy, Laser & Cosmetic Dermatologist",
-      "degrees": "MBBS, MD (BSMMU), Assistant Professor",
-      "designation": "Enam Medical College & Hospital",
-      "chamberTime": "Every Friday, 4:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Dermatology"
-    },
-    {
-      "id": "fri-7",
-      "name": "Dr. Md. Monzur Morshed",
-      "title": "Medicine, Chest, Heart, Gastro-liver & Rheumatic Fever Specialist",
-      "degrees": "MBBS (Dhaka), BCS (Health), FCPS (Medicine)",
-      "designation": "National Institute of Cancer Research & Hospital, Mohakhali, Dhaka",
-      "chamberTime": "Every Friday, 10:00 AM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
-    },
-    {
-      "id": "fri-8",
-      "name": "Dr. Sohag Rana",
-      "title": "ENT (Ear, Nose, Throat) Specialist & Head-Neck Surgeon",
-      "degrees": "MBBS, BCS (Health), DLO (ENT) Consultant",
-      "designation": "Medical College Hospital Panelist",
-      "chamberTime": "Every Friday, 10:00 AM to 1:00 PM",
-      "image": "https://picsum.photos",
-      "department": "ENT"
-    },
-    {
-      "id": "fri-9",
-      "name": "Dr. Faridul Alam",
-      "title": "ENT Specialist & Head-Neck Surgeon",
-      "degrees": "MBBS, CCD (BIRDEM), DLO (BSMMU), Consultant ENT Department",
-      "designation": "Enam Medical College & Hospital",
-      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "ENT"
-    },
-    {
-      "id": "fri-10",
-      "name": "Dr. Md. Azmir Hossain Real",
-      "title": "Neonatal & Child Disease Specialist (0 to 18 Years)",
-      "degrees": "MBBS, DCH, FCPS (FP), Former Specialist (PG Hospital)",
-      "designation": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
-      "chamberTime": "Every Friday, 10:00 AM to 1:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Pediatrics"
-    },
-    {
-      "id": "fri-11",
-      "name": "Dr. Farhana Sultana",
-      "title": "Sonologist & Fetal Congenital Anomaly Scanning Specialist",
-      "degrees": "MBBS (DMU), (BITMIR), Special Training on TVS Fetal Scan",
-      "designation": "Advanced Ultrasonography Diagnostics Panel",
-      "chamberTime": "Every Friday, 10:00 AM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
-    },
-    {
-      "id": "fri-12",
-      "name": "Dr. Al-Imran Mahmud",
-      "title": "Bone, Joint, Rheumatism, Spine & Orthopedic Trauma Surgeon",
-      "degrees": "MBBS (DU), BCS (Health), FCPS Part-2, Assistant Registrar",
-      "designation": "Shaheed Ahsan Ullah Master General Hospital",
-      "chamberTime": "Every Friday, 10:00 AM to 3:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Orthopedics"
-    },
-    {
-      "id": "fri-13",
-      "name": "Dr. Amatur Rahim Priya",
-      "title": "Gynecology, Obstetrics Specialist & Surgeon",
-      "degrees": "MBBS (DU), PGT (Gyne & Obs), CMU (CMUD)",
-      "designation": "Advanced Family Health Consultant",
-      "chamberTime": "Every Friday, 9:00 AM to 5:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
-    },
-    {
-      "id": "fri-14",
-      "name": "Dr. Monira Ferdous",
-      "title": "Gynecology, Obstetrics & Female Disease Specialist",
-      "degrees": "MBBS (CMU), DMU (Ultra), PGT (Gyne & Obs), PGT (Medicine)",
-      "designation": "Dhaka Medical College & Hospital",
-      "chamberTime": "Every Friday, 5:00 PM to 8:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Gynecology"
-    },
-    {
-      "id": "fri-15",
-      "name": "Dr. Amit Sikdar",
-      "title": "Medicine, Skin, Sex, ENT, Trauma & Diabetes Practitioner",
-      "degrees": "MBBS, DU, CMU, BMDC Reg: A-108640",
-      "designation": "Tairunnessa Memorial Medical College & Hospital",
-      "chamberTime": "Every Friday, 9:00 AM to 10:00 PM",
-      "image": "https://picsum.photos",
-      "department": "Medicine"
+      "name": "ডা. এম জোবায়ের হোসেন",
+      "title": "মেডিসিন, বাতব্যথা, ডায়াবেটিক সার্জারি ও শিশু রোগ চিকিৎসক",
+      "degrees": "এম.বি.বি.এস (ঢাকা), সিএমইউ, পিজিটি (মেডিসিন)",
+      "designation": "গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল",
+      "chamberTime": "প্রতি রবি ও বৃহস্পতিবার, বিকাল ৪:০০টা থেকে রাত ৮:০০টা",
+      "image": "https://i.ibb.co/203mMgMJ/50.png",
+      "department": "মেডিসিন"
     }
   ]
 }
-  
 ]
