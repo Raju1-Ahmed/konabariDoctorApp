@@ -32,7 +32,7 @@ function AdminDashboard() {
 
     const load = async () => {
       try {
-        const [doctorsResponse, appointmentsResponse] = await Promise.all([
+        const [doctorsResponse, appointmentsResponse] = await Promise.allSettled([
           fetchAdminDoctors(),
           fetchAdminAppointments(),
         ])
@@ -40,8 +40,9 @@ function AdminDashboard() {
         if (!active) return
 
         setStats({
-          doctors: doctorsResponse.data.data?.length || 0,
-          appointments: appointmentsResponse.data.data?.length || 0,
+          doctors: doctorsResponse.status === 'fulfilled' ? doctorsResponse.value.data.data?.length || 0 : 0,
+          appointments:
+            appointmentsResponse.status === 'fulfilled' ? appointmentsResponse.value.data.data?.length || 0 : 0,
         })
       } catch {
         if (active) {
