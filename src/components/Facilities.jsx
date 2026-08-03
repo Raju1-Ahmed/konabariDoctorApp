@@ -20,17 +20,7 @@ import lab5 from '../assets/LabAid Hospital Konabari electric Machine (5).jpeg'
 import { facilities } from '../data/siteData.js'
 import SectionHeader from './SectionHeader.jsx'
 
-const facilityIcons = [
-  FaProcedures,
-  FaBaby,
-  FaClinicMedical,
-  FaPills,
-  FaMicroscope,
-  FaAmbulance,
-  FaBed,
-  FaParking,
-]
-
+const facilityIcons = [FaProcedures, FaBaby, FaClinicMedical, FaPills, FaMicroscope, FaAmbulance, FaBed, FaParking]
 const labImages = [lab1, lab2, lab3, lab4, lab5]
 
 function Facilities() {
@@ -82,6 +72,8 @@ function Facilities() {
                     <img
                       alt={`Lab equipment ${index + 1}`}
                       className="h-[360px] w-full object-cover transition duration-700 group-hover:scale-110"
+                      decoding="async"
+                      loading="lazy"
                       src={image}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />

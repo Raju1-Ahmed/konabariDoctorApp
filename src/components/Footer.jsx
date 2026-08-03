@@ -2,6 +2,29 @@ import { FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { contactInfo, departments, navItems } from '../data/siteData.js'
 
+function FooterLink({ item }) {
+  const href = typeof item === 'string' ? '' : item?.href || ''
+  const label = typeof item === 'string' ? item : item?.label || ''
+
+  if (typeof href === 'string' && (href.startsWith('http://') || href.startsWith('https://'))) {
+    return (
+      <a className="hover:text-secondary" href={href} rel="noreferrer noopener" target="_blank">
+        {label}
+      </a>
+    )
+  }
+
+  if (typeof href === 'string' && href.length > 0) {
+    return (
+      <Link className="hover:text-secondary" to={href}>
+        {label}
+      </Link>
+    )
+  }
+
+  return <span>{label}</span>
+}
+
 function Footer() {
   return (
     <footer className="bg-dark pt-16 text-white">
@@ -20,16 +43,28 @@ function Footer() {
             Complete digital hospital website concept with appointment, doctors, departments, gallery and contact.
           </p>
           <div className="mt-6 flex gap-3">
-            <a className="grid size-11 place-items-center rounded-full bg-white/10" href={contactInfo.facebook} aria-label="Facebook">
+            <a
+              className="grid size-11 place-items-center rounded-full bg-white/10"
+              href={contactInfo.facebook}
+              aria-label="Facebook"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
               <FaFacebookF />
             </a>
-            <a className="grid size-11 place-items-center rounded-full bg-white/10" href={contactInfo.whatsapp} aria-label="WhatsApp">
+            <a
+              className="grid size-11 place-items-center rounded-full bg-white/10"
+              href={contactInfo.whatsapp}
+              aria-label="WhatsApp"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
               <FaWhatsapp />
             </a>
           </div>
         </div>
 
-        <FooterColumn title="Quick Links" items={navItems.slice(0, 6).map((item) => item.label)} />
+        <FooterColumn title="Quick Links" items={navItems.slice(0, 6)} />
         <FooterColumn title="Departments" items={departments.slice(0, 6)} />
         <div>
           <h3 className="font-poppins text-lg font-black">Contact</h3>
@@ -53,10 +88,11 @@ function FooterColumn({ title, items }) {
     <div>
       <h3 className="font-poppins text-lg font-black">{title}</h3>
       <div className="mt-5 grid gap-3 text-slate-300">
-        {items.map((item) => (
-          <a className="hover:text-secondary" href="/#" key={item}>
-            {item}
-          </a>
+        {items.map((item, index) => (
+          <FooterLink
+            item={item}
+            key={typeof item === 'string' ? `${item}-${index}` : item?.label || item?.href || index}
+          />
         ))}
       </div>
     </div>

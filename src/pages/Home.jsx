@@ -1,108 +1,114 @@
-import { Helmet } from "react-helmet-async";
-// import About from "../components/About";
-import AppointmentForm from "../components/AppointmentForm";
-// import Contact from "../components/Contact";
-import Counter from "../components/Counter";
-import Department from "../components/Department";
-// import DoctorCard from "../components/DoctorCard";
-import Emergency from "../components/Emergency";
-import Facilities from "../components/Facilities";
-import Gallery from "../components/Gallery";
-import News from "../components/News";
-import QuickServices from "../components/QuickServices";
-import Reveal from "../components/Reveal";
-import SectionHeader from "../components/SectionHeader";
-import Slide from "../components/Slides";
-import Testimonial from "../components/Testimonial";
-import WhyChooseUs from "../components/WhyChooseUs";
-import DoctorsSchedule from "../components/DoctorsSchedule";
+import { lazy, Suspense } from 'react'
+import { Helmet } from 'react-helmet-async'
+import LoadingIndicator from '../components/LoadingIndicator.jsx'
+import Reveal from '../components/Reveal.jsx'
+import SectionHeader from '../components/SectionHeader.jsx'
+import Slide from '../components/Slides.jsx'
+
+const AppointmentForm = lazy(() => import('../components/AppointmentForm.jsx'))
+const Counter = lazy(() => import('../components/Counter.jsx'))
+const Department = lazy(() => import('../components/Department.jsx'))
+const DoctorsSchedule = lazy(() => import('../components/DoctorsSchedule.jsx'))
+const Emergency = lazy(() => import('../components/Emergency.jsx'))
+const Facilities = lazy(() => import('../components/Facilities.jsx'))
+const Gallery = lazy(() => import('../components/Gallery.jsx'))
+const News = lazy(() => import('../components/News.jsx'))
+const QuickServices = lazy(() => import('../components/QuickServices.jsx'))
+const Testimonial = lazy(() => import('../components/Testimonial.jsx'))
+const WhyChooseUs = lazy(() => import('../components/WhyChooseUs.jsx'))
+
+function SectionFallback() {
+  return (
+    <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+      <LoadingIndicator label="Loading section" />
+    </div>
+  )
+}
+
 function Home() {
   return (
     <main>
       <Helmet>
         <html lang="bn-BD" />
-        <title>
-          
-          Konabari Lab Aid Hospital | Official Website, Doctors &
-          Appointment Demo
-        </title>
-
+        <title>Konabari Lab Aid Hospital | Official Website, Doctors & Appointment Demo</title>
         <meta
           name="description"
           content="Konabari Lab Aid Hospital website demo with doctors, departments, online appointment, emergency care, facilities, gallery, patient reviews and Google Map contact."
         />
-
         <meta
           name="keywords"
           content="Konabari Lab Aid Hospital, Gazipur hospital, doctor appointment, diagnostic center, emergency hospital, hospital website demo"
         />
-
-        <meta
-          property="og:title"
-          content="Konabari Lab Aid Hospital Website Demo"
-        />
-
+        <meta property="og:title" content="Konabari Lab Aid Hospital Website Demo" />
         <meta
           property="og:description"
           content="Corporate hospital website demo for patient trust, online appointment, doctor schedule, emergency contact and digital branding."
         />
-
         <meta property="og:type" content="website" />
-        <meta
-          name="twitter:card"
-          content="summary_large_image"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <Slide />
 
-      <DoctorsSchedule />
+      <Suspense fallback={<SectionFallback />}>
+        <DoctorsSchedule />
+      </Suspense>
 
       <Reveal>
-        <QuickServices />
-      </Reveal>
-
-      {/* <Reveal>
-        <About />
-      </Reveal> */}
-
-      <Reveal>
-        <Department />
+        <Suspense fallback={<SectionFallback />}>
+          <QuickServices />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <WhyChooseUs />
-      </Reveal>
-
-      <Counter />
-
-      <Reveal>
-        <Facilities />
+        <Suspense fallback={<SectionFallback />}>
+          <Department />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <Gallery />
+        <Suspense fallback={<SectionFallback />}>
+          <WhyChooseUs />
+        </Suspense>
+      </Reveal>
+
+      <Suspense fallback={<SectionFallback />}>
+        <Counter />
+      </Suspense>
+
+      <Reveal>
+        <Suspense fallback={<SectionFallback />}>
+          <Facilities />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <Testimonial />
+        <Suspense fallback={<SectionFallback />}>
+          <Gallery />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <Emergency />
+        <Suspense fallback={<SectionFallback />}>
+          <Testimonial />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <News />
+        <Suspense fallback={<SectionFallback />}>
+          <Emergency />
+        </Suspense>
       </Reveal>
 
       <Reveal>
-        <section
-          className="section-padding bg-white"
-          id="appointment"
-        >
+        <Suspense fallback={<SectionFallback />}>
+          <News />
+        </Suspense>
+      </Reveal>
+
+      <Reveal>
+        <section className="section-padding bg-white" id="appointment">
           <div className="section-container grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-
             <SectionHeader
               align="left"
               eyebrow="Appointment"
@@ -110,17 +116,14 @@ function Home() {
               text="Patients can request doctor appointments from the website."
             />
 
-            <AppointmentForm />
-
+            <Suspense fallback={<SectionFallback />}>
+              <AppointmentForm />
+            </Suspense>
           </div>
         </section>
       </Reveal>
-
-      {/* <Reveal>
-        <Contact />
-      </Reveal> */}
     </main>
-  );
+  )
 }
 
-export default Home;
+export default Home

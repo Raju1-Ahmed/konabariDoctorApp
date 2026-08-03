@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FiEdit2, FiPlus, FiTrash2 } from 'react-icons/fi'
 import { deleteAdminDoctor, fetchAdminDoctors } from '../../api/admin.js'
+import LoadingIndicator from '../LoadingIndicator.jsx'
 import { resolveImageUrl } from '../../utils/imageUrl.js'
 
 function DoctorManagementTable({ title = 'Doctors', description = '', showAddButton = true, onCountChange }) {
   const [doctors, setDoctors] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [deletingId, setDeletingId] = useState('')
   const location = useLocation()
 
   useEffect(() => {
@@ -46,6 +48,8 @@ function DoctorManagementTable({ title = 'Doctors', description = '', showAddBut
     const confirmed = window.confirm('Delete this doctor?')
     if (!confirmed) return
 
+    setDeletingId(doctorId)
+
     try {
       await deleteAdminDoctor(doctorId)
       setDoctors((currentDoctors) => {
@@ -55,6 +59,8 @@ function DoctorManagementTable({ title = 'Doctors', description = '', showAddBut
       })
     } catch (requestError) {
       alert(requestError?.response?.data?.message || 'Delete failed')
+    } finally {
+      setDeletingId('')
     }
   }
 
@@ -81,7 +87,25 @@ function DoctorManagementTable({ title = 'Doctors', description = '', showAddBut
       {error ? <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{error}</p> : null}
 
       {loading ? (
-        <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-slate-600 shadow-sm">Loading doctors…</div>
+        <div className="space-y-5 rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+          <LoadingIndicator className="justify-start" label="Doctors are loading" />
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, index) => (
+              <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white" key={index}>
+                <div className="h-48 animate-pulse bg-slate-100" />
+                <div className="space-y-3 p-5">
+                  <div className="h-4 w-20 animate-pulse rounded-full bg-slate-100" />
+                  <div className="h-6 w-3/4 animate-pulse rounded-full bg-slate-100" />
+                  <div className="h-4 w-1/2 animate-pulse rounded-full bg-slate-100" />
+                  <div className="grid gap-3 pt-2">
+                    <div className="h-16 animate-pulse rounded-2xl bg-slate-100" />
+                    <div className="h-16 animate-pulse rounded-2xl bg-slate-100" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       ) : doctors.length === 0 ? (
         <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-slate-600 shadow-sm">No doctors found.</div>
       ) : (
@@ -141,12 +165,22 @@ function DoctorManagementTable({ title = 'Doctors', description = '', showAddBut
                     Edit
                   </Link>
                   <button
-                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-red-200 px-4 py-3 text-sm font-bold text-red-600 transition hover:bg-red-50"
+                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-red-200 px-4 py-3 text-sm font-bold text-red-600 transition hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-70"
+                    disabled={deletingId === doctor._id}
                     type="button"
                     onClick={() => handleDelete(doctor._id)}
                   >
-                    <FiTrash2 />
-                    Delete
+                    {deletingId === doctor._id ? (
+                      <>
+                        <span className="h-4 w-4 animate-spin rounded-full border-2 border-red-500 border-t-transparent" />
+                        Deleting…
+                      </>
+                    ) : (
+                      <>
+                        <FiTrash2 />
+                        Delete
+                      </>
+                    )}
                   </button>
                 </div>
               </div>

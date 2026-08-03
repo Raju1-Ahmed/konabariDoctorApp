@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { createAdminDoctor, fetchAdminDoctor, updateAdminDoctor } from '../../api/admin.js'
+import LoadingIndicator from '../../components/LoadingIndicator.jsx'
 import { resolveImageUrl } from '../../utils/imageUrl.js'
 
 const initialState = {
@@ -129,7 +130,13 @@ function AdminDoctorForm() {
   }
 
   if (loading) {
-    return <div className="p-6 text-slate-600">Loading doctor form…</div>
+    return (
+      <div className="p-4 sm:p-6">
+        <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <LoadingIndicator label="Doctor form is loading" />
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -138,20 +145,26 @@ function AdminDoctorForm() {
         <title>{pageTitle} | Admin</title>
       </Helmet>
 
-      <div className="space-y-6 p-6">
-        <div className="flex items-center justify-between gap-4">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-teal-600">Doctor Management</p>
-            <h1 className="mt-2 text-3xl font-black text-slate-900">{pageTitle}</h1>
+      <div className="space-y-5 p-4 sm:p-6">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="min-w-0">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-teal-600 sm:text-sm">Doctor Management</p>
+            <h1 className="mt-2 break-words text-2xl font-black text-slate-900 sm:text-3xl">{pageTitle}</h1>
           </div>
-          <Link className="rounded-full border border-slate-200 px-5 py-3 font-bold text-slate-700" to="/admin/doctors">
+          <Link
+            className="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-5 py-3 font-bold text-slate-700 sm:w-auto"
+            to="/admin/doctors"
+          >
             Back to doctors
           </Link>
         </div>
 
         {error ? <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{error}</p> : null}
 
-        <form className="grid gap-4 rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-2" onSubmit={handleSubmit}>
+        <form
+          className="grid gap-4 rounded-[1.75rem] border border-slate-200 bg-white p-4 shadow-sm sm:p-6 md:grid-cols-2"
+          onSubmit={handleSubmit}
+        >
           {[
             ['day', 'Day'],
             ['name', 'Name'],
@@ -160,9 +173,9 @@ function AdminDoctorForm() {
             ['chamberTime', 'Chamber Time'],
           ].map(([field, label]) => (
             <label className="grid gap-2 font-semibold text-slate-700" key={field}>
-              {label}
+              <span className="text-sm sm:text-base">{label}</span>
               <input
-                className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-secondary"
+                className="min-w-0 rounded-2xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-secondary sm:text-base"
                 name={field}
                 value={formData[field]}
                 onChange={handleChange}
@@ -171,10 +184,10 @@ function AdminDoctorForm() {
           ))}
 
           <label className="grid gap-2 font-semibold text-slate-700 md:col-span-2">
-            Doctor Image
+            <span className="text-sm sm:text-base">Doctor Image</span>
             <input
               accept="image/*"
-              className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none file:mr-4 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:font-bold file:text-white focus:border-secondary"
+              className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none file:mr-4 file:rounded-full file:border-0 file:bg-accent file:px-4 file:py-2 file:font-bold file:text-white focus:border-secondary sm:text-base"
               name="image"
               type="file"
               onChange={handleChange}
@@ -183,9 +196,15 @@ function AdminDoctorForm() {
 
           <div className="md:col-span-2">
             {imagePreview ? (
-              <div className="mx-auto max-w-sm overflow-hidden rounded-[1.25rem] border border-slate-200 bg-slate-50">
+              <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[1.25rem] border border-slate-200 bg-slate-50">
                 <div className="border-b border-slate-200 px-4 py-3 text-sm font-bold text-slate-600">Image Preview</div>
-                <img alt="Doctor preview" className="h-40 w-full object-contain bg-white p-3" src={resolveImageUrl(imagePreview)} />
+                <img
+                  alt="Doctor preview"
+                  className="h-36 w-full bg-white object-contain p-3 sm:h-40"
+                  decoding="async"
+                  loading="lazy"
+                  src={resolveImageUrl(imagePreview)}
+                />
               </div>
             ) : (
               <p className="rounded-2xl border border-dashed border-slate-300 px-4 py-4 text-sm text-slate-500">
@@ -195,9 +214,9 @@ function AdminDoctorForm() {
           </div>
 
           <label className="grid gap-2 font-semibold text-slate-700 md:col-span-2">
-            Degrees
+            <span className="text-sm sm:text-base">Degrees</span>
             <textarea
-              className="min-h-24 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-secondary"
+              className="min-h-24 rounded-2xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-secondary sm:text-base"
               name="degrees"
               value={formData.degrees}
               onChange={handleChange}
@@ -205,9 +224,9 @@ function AdminDoctorForm() {
           </label>
 
           <label className="grid gap-2 font-semibold text-slate-700 md:col-span-2">
-            Designation
+            <span className="text-sm sm:text-base">Designation</span>
             <textarea
-              className="min-h-24 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-secondary"
+              className="min-h-24 rounded-2xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-secondary sm:text-base"
               name="designation"
               value={formData.designation}
               onChange={handleChange}
@@ -216,11 +235,16 @@ function AdminDoctorForm() {
 
           <div className="md:col-span-2">
             <button
-              className="rounded-full bg-accent px-6 py-3.5 font-black text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
+              className="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3.5 font-black text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
               disabled={saving}
               type="submit"
             >
-              {saving ? 'Saving…' : isEditMode ? 'Update Doctor' : 'Create Doctor'}
+              {saving ? (
+                <span className="inline-flex items-center gap-2">
+                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                  Saving…
+                </span>
+              ) : isEditMode ? 'Update Doctor' : 'Create Doctor'}
             </button>
           </div>
         </form>

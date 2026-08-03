@@ -4,7 +4,7 @@ export const contactInfo = {
   address: 'Konabari, Gazipur, Bangladesh',
   hours: 'Open 24 Hours · Emergency Always Available',
   facebook: 'https://www.facebook.com/Konabari.Labaid/',
-  whatsapp: '01916546817',
+  whatsapp: 'https://wa.me/8801916546817',
 }
 
 export const navItems = [

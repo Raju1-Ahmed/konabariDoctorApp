@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { FaCalendarCheck, FaClock, FaUserMd } from 'react-icons/fa'
 import { useSearchParams } from 'react-router-dom'
 import { createAppointment } from '../api/appointments.js'
+import LoadingIndicator from './LoadingIndicator.jsx'
 
 const buildInitialForm = (searchParams) => ({
   patientName: '',
@@ -72,11 +73,20 @@ function AppointmentForm({ compact = false }) {
 
   return (
     <form
+      aria-busy={submitting}
       className={`grid gap-4 rounded-[1.75rem] bg-white p-6 shadow-xl shadow-slate-900/5 ${
         compact ? '' : 'md:grid-cols-2'
       }`}
       onSubmit={handleSubmit}
     >
+      {submitting ? (
+        <div className="md:col-span-2">
+          <div className="rounded-2xl border border-teal-100 bg-teal-50 px-4 py-4">
+            <LoadingIndicator className="justify-start" label="Appointment request is submitting" />
+          </div>
+        </div>
+      ) : null}
+
       {(selectedDoctor || selectedDepartment || selectedDay || selectedChamberTime) && (
         <div className="md:col-span-2 grid gap-2 rounded-2xl border border-teal-100 bg-teal-50 px-4 py-4 text-sm text-slate-700">
           {selectedDoctor ? (
@@ -111,6 +121,7 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Patient Name
         <input
+          autoComplete="name"
           className="rounded-2xl border border-slate-200 px-4 py-4 outline-none focus:border-secondary"
           name="patientName"
           onChange={handleChange}
@@ -124,6 +135,7 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Phone Number
         <input
+          autoComplete="tel"
           className="rounded-2xl border border-slate-200 px-4 py-4 outline-none focus:border-secondary"
           name="phone"
           onChange={handleChange}
@@ -137,9 +149,10 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Doctor Name
         <input
-          className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 font-semibold text-slate-700 outline-none"
+          className="rounded-2xl border border-slate-200 px-4 py-4 font-semibold text-slate-700 outline-none focus:border-secondary"
           name="doctorName"
-          readOnly
+          onChange={handleChange}
+          placeholder="Enter doctor name"
           value={formData.doctorName}
         />
       </label>
@@ -147,9 +160,10 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Department
         <input
-          className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 font-semibold text-slate-700 outline-none"
+          className="rounded-2xl border border-slate-200 px-4 py-4 font-semibold text-slate-700 outline-none focus:border-secondary"
           name="department"
-          readOnly
+          onChange={handleChange}
+          placeholder="Enter department"
           value={formData.department}
         />
       </label>
@@ -157,9 +171,10 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Day
         <input
-          className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 font-semibold text-slate-700 outline-none"
+          className="rounded-2xl border border-slate-200 px-4 py-4 font-semibold text-slate-700 outline-none focus:border-secondary"
           name="day"
-          readOnly
+          onChange={handleChange}
+          placeholder="Enter day"
           value={formData.day}
         />
       </label>
@@ -167,9 +182,10 @@ function AppointmentForm({ compact = false }) {
       <label className="grid gap-2 font-bold text-slate-700">
         Chamber Time
         <input
-          className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 font-semibold text-slate-700 outline-none"
+          className="rounded-2xl border border-slate-200 px-4 py-4 font-semibold text-slate-700 outline-none focus:border-secondary"
           name="chamberTime"
-          readOnly
+          onChange={handleChange}
+          placeholder="Enter chamber time"
           value={formData.chamberTime}
         />
       </label>
@@ -177,9 +193,7 @@ function AppointmentForm({ compact = false }) {
       {messageState.text ? (
         <div
           className={`md:col-span-2 rounded-2xl px-4 py-3 text-sm font-semibold ${
-            messageState.type === 'success'
-              ? 'bg-emerald-50 text-emerald-700'
-              : 'bg-red-50 text-red-700'
+            messageState.type === 'success' ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700'
           }`}
         >
           {messageState.text}
@@ -191,8 +205,17 @@ function AppointmentForm({ compact = false }) {
         disabled={submitting}
         type="submit"
       >
-        <FaCalendarCheck />
-        {submitting ? 'Submitting…' : 'Submit Request'}
+        {submitting ? (
+          <>
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+            Submitting…
+          </>
+        ) : (
+          <>
+            <FaCalendarCheck />
+            Submit Request
+          </>
+        )}
       </button>
     </form>
   )

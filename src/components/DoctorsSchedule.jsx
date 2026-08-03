@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import DoctorCard from './DoctorCard.jsx'
+import LoadingIndicator from './LoadingIndicator.jsx'
 import SectionHeader from './SectionHeader.jsx'
 import doctorsData from '../data/DoctorsData.json'
 import { doctorImageUrls, getDoctorImage } from '../data/doctorImages.js'
@@ -11,7 +12,7 @@ function groupDoctorsByDay(doctors) {
   const grouped = new Map()
 
   for (const doctor of doctors) {
-    const day = doctor.day || 'অন্য দিন'
+    const day = doctor.day || 'অন্যান্য দিন'
     const current = grouped.get(day) || []
     grouped.set(day, [...current, doctor])
   }
@@ -55,7 +56,7 @@ function DoctorsSchedule({ compact = false }) {
       } catch {
         if (active) {
           setDoctorsByDay(doctorsData)
-          setError('')
+          setError('ডাক্তারের তথ্য লোড করা যাচ্ছে না।')
         }
       } finally {
         if (active) setLoading(false)
@@ -76,10 +77,7 @@ function DoctorsSchedule({ compact = false }) {
   }, [activeDay, doctorsByDay.length])
 
   const activeDoctorsGroup = doctorsByDay[activeDay] || doctorsByDay[0]
-  const dayOffset = doctorsByDay
-    .slice(0, activeDay)
-    .reduce((total, day) => total + day.doctors.length, 0)
-
+  const dayOffset = doctorsByDay.slice(0, activeDay).reduce((total, day) => total + day.doctors.length, 0)
   const dayButtons = useMemo(() => doctorsByDay.map((day) => day.day), [doctorsByDay])
 
   return (
@@ -113,12 +111,24 @@ function DoctorsSchedule({ compact = false }) {
         </h2>
 
         {loading ? (
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 text-center font-semibold text-slate-600 shadow-sm">
-            ডাক্তারদের তথ্য লোড হচ্ছে…
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <LoadingIndicator label="ডাক্তারের তথ্য লোড হচ্ছে" />
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white" key={index}>
+                  <div className="h-44 animate-pulse bg-slate-100" />
+                  <div className="space-y-3 p-5">
+                    <div className="h-4 w-24 animate-pulse rounded-full bg-slate-100" />
+                    <div className="h-6 w-2/3 animate-pulse rounded-full bg-slate-100" />
+                    <div className="h-4 w-1/2 animate-pulse rounded-full bg-slate-100" />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         ) : error ? (
           <div className="rounded-3xl border border-red-200 bg-red-50 p-6 text-center font-semibold text-red-700">
-            ডাক্তারদের তথ্য লোড করা যাচ্ছে না।
+            {error}
           </div>
         ) : (
           <div className={`grid ${compact ? 'gap-4 md:grid-cols-2 xl:grid-cols-3' : 'gap-6 md:grid-cols-2 xl:grid-cols-3'}`}>
@@ -126,11 +136,7 @@ function DoctorsSchedule({ compact = false }) {
               <DoctorCard
                 doctor={{
                   ...doctor,
-                  image:
-                    getDoctorImage(doctor.name) ||
-                    doctor.image ||
-                    doctorImageUrls[dayOffset + index] ||
-                    '',
+                  image: getDoctorImage(doctor.name) || doctor.image || doctorImageUrls[dayOffset + index] || '',
                 }}
                 compact={compact}
                 key={doctor._id || doctor.sourceId || doctor.id || `${doctor.name}-${index}`}

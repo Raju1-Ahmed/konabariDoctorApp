@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { FiClock, FiPhone, FiTrash2, FiUser, FiUsers } from 'react-icons/fi'
 import { deleteAdminAppointment, fetchAdminAppointments } from '../../api/admin.js'
+import LoadingIndicator from '../../components/LoadingIndicator.jsx'
 
 function AdminAppointments() {
   const [appointments, setAppointments] = useState([])
@@ -36,9 +37,7 @@ function AdminAppointments() {
 
     try {
       await deleteAdminAppointment(appointmentId)
-      setAppointments((currentAppointments) =>
-        currentAppointments.filter((appointment) => appointment._id !== appointmentId)
-      )
+      setAppointments((currentAppointments) => currentAppointments.filter((appointment) => appointment._id !== appointmentId))
     } catch (requestError) {
       setError(requestError?.response?.data?.message || 'Delete failed')
     } finally {
@@ -69,7 +68,26 @@ function AdminAppointments() {
         {error ? <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{error}</p> : null}
 
         {loading ? (
-          <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-slate-600 shadow-sm">Loading appointments…</div>
+          <div className="space-y-5 rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <LoadingIndicator className="justify-start" label="Appointments are loading" />
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white" key={index}>
+                  <div className="h-24 animate-pulse bg-slate-100" />
+                  <div className="space-y-3 p-5">
+                    <div className="h-6 w-2/3 animate-pulse rounded-full bg-slate-100" />
+                    <div className="h-4 w-1/2 animate-pulse rounded-full bg-slate-100" />
+                    <div className="grid gap-3 pt-2">
+                      <div className="h-4 animate-pulse rounded-full bg-slate-100" />
+                      <div className="h-4 animate-pulse rounded-full bg-slate-100" />
+                      <div className="h-4 animate-pulse rounded-full bg-slate-100" />
+                      <div className="h-4 animate-pulse rounded-full bg-slate-100" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         ) : appointments.length === 0 ? (
           <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-slate-600 shadow-sm">No appointments found.</div>
         ) : (
@@ -134,8 +152,17 @@ function AdminAppointments() {
                       onClick={() => handleDelete(appointment._id)}
                       type="button"
                     >
-                      <FiTrash2 />
-                      {deletingId === appointment._id ? 'Deleting…' : 'Delete'}
+                      {deletingId === appointment._id ? (
+                        <>
+                          <span className="h-4 w-4 animate-spin rounded-full border-2 border-red-500 border-t-transparent" />
+                          Deleting…
+                        </>
+                      ) : (
+                        <>
+                          <FiTrash2 />
+                          Delete
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>

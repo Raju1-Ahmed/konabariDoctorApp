@@ -35,8 +35,14 @@ function DoctorCard({ doctor, compact = false }) {
           }`}
         >
           {imageSrc ? (
-            <a href={imageSrc} rel="noreferrer" target="_blank">
-              <img alt={doctor.name} className="h-full w-full rounded-[1.5rem] object-cover" src={imageSrc} />
+            <a aria-label={`Open image of ${doctor.name}`} href={imageSrc} rel="noreferrer noopener" target="_blank">
+              <img
+                alt={doctor.name}
+                className="h-full w-full rounded-[1.5rem] object-cover"
+                decoding="async"
+                loading="lazy"
+                src={imageSrc}
+              />
             </a>
           ) : (
             <div className="flex h-full w-full items-center justify-center rounded-[1.5rem]">
