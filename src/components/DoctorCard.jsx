@@ -30,7 +30,7 @@ function DoctorCard({ doctor, compact = false }) {
         </div>
 
         <div
-          className={`mx-auto grid place-items-center rounded-[1.5rem] bg-gradient-to-br from-primary to-secondary text-white shadow-2xl shadow-teal-700/20 ${
+          className={`mx-auto grid place-items-center overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-primary to-secondary text-white shadow-2xl shadow-teal-700/20 ${
             compact ? 'aspect-[16/10] max-w-[15rem]' : 'aspect-[4/3] max-w-[18rem]'
           }`}
         >
@@ -40,8 +40,10 @@ function DoctorCard({ doctor, compact = false }) {
                 alt={doctor.name}
                 className="h-full w-full rounded-[1.5rem] object-cover"
                 decoding="async"
+                height={900}
                 loading="lazy"
                 src={imageSrc}
+                width={900}
               />
             </a>
           ) : (

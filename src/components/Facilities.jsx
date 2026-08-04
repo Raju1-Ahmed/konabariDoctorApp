@@ -1,22 +1,13 @@
-import {
-  FaAmbulance,
-  FaBaby,
-  FaBed,
-  FaClinicMedical,
-  FaMicroscope,
-  FaParking,
-  FaPills,
-  FaProcedures,
-} from 'react-icons/fa'
+import { FaAmbulance, FaBaby, FaBed, FaClinicMedical, FaMicroscope, FaParking, FaPills, FaProcedures } from 'react-icons/fa'
 import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import lab1 from '../assets/LabAid Hospital Konabari electric Machine (1).jpeg'
-import lab2 from '../assets/LabAid Hospital Konabari electric Machine (2).jpeg'
-import lab3 from '../assets/LabAid Hospital Konabari electric Machine (3).jpeg'
-import lab4 from '../assets/LabAid Hospital Konabari electric Machine (4).jpeg'
-import lab5 from '../assets/LabAid Hospital Konabari electric Machine (5).jpeg'
+import lab1 from '../assets/LabAid Hospital Konabari electric Machine (1).webp'
+import lab2 from '../assets/LabAid Hospital Konabari electric Machine (2).webp'
+import lab3 from '../assets/LabAid Hospital Konabari electric Machine (3).webp'
+import lab4 from '../assets/LabAid Hospital Konabari electric Machine (4).webp'
+import lab5 from '../assets/LabAid Hospital Konabari electric Machine (5).webp'
 import { facilities } from '../data/siteData.js'
 import SectionHeader from './SectionHeader.jsx'
 
@@ -38,10 +29,7 @@ function Facilities() {
             const FacilityIcon = facilityIcons[index]
 
             return (
-              <article
-                className="flex items-center gap-4 rounded-3xl border border-white bg-white p-5 shadow-xl shadow-slate-900/5"
-                key={facility}
-              >
+              <article className="flex items-center gap-4 rounded-3xl border border-white bg-white p-5 shadow-xl shadow-slate-900/5" key={facility}>
                 <div className="grid size-14 shrink-0 place-items-center rounded-2xl bg-teal-50 text-2xl text-primary">
                   <FacilityIcon />
                 </div>
@@ -66,15 +54,17 @@ function Facilities() {
             spaceBetween={30}
           >
             {labImages.map((image, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={image}>
                 <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-xl shadow-slate-900/5">
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden aspect-[4/3]">
                     <img
                       alt={`Lab equipment ${index + 1}`}
-                      className="h-[360px] w-full object-cover transition duration-700 group-hover:scale-110"
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                       decoding="async"
                       loading="lazy"
                       src={image}
+                      width={1200}
+                      height={900}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
                     <div className="absolute inset-x-0 bottom-0 translate-y-10 p-6 text-white transition duration-500 group-hover:translate-y-0">

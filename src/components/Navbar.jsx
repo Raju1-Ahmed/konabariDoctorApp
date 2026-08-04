@@ -8,7 +8,11 @@ import useLanguage from '../hooks/useLanguage.js'
 import Logo from '../assets/LabAid_Hospital_Konabari_Branding main Logo.png'
 
 function NavLinkItem({ item, onClick, className = '' }) {
-  const isExternal = item.href.startsWith('http://') || item.href.startsWith('https://') || item.href.startsWith('mailto:') || item.href.startsWith('tel:')
+  const isExternal =
+    item.href.startsWith('http://') ||
+    item.href.startsWith('https://') ||
+    item.href.startsWith('mailto:') ||
+    item.href.startsWith('tel:')
 
   if (isExternal) {
     return (
@@ -87,8 +91,10 @@ function Navbar() {
               lg:h-20
               drop-shadow-[0_8px_20px_rgba(0,0,0,0.18)]
             "
+            height={180}
             loading="eager"
             src={Logo}
+            width={360}
           />
         </Link>
 
@@ -126,8 +132,7 @@ function Navbar() {
               key={item.label}
               item={item}
               onClick={() => setIsMenuOpen(false)}
-            >
-            </NavLinkItem>
+            />
           ))}
           <Link
             className="rounded-2xl bg-accent px-4 py-3 text-center font-black text-white"

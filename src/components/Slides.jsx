@@ -6,9 +6,9 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import hero1 from '../assets/LabAid Hospital Konabari (1).png'
-import hero2 from '../assets/LabAid Hospital Konabari (2).png'
-import hero3 from '../assets/LabAid Hospital Konabari (3).jpeg'
+import hero1 from '../assets/LabAid Hospital Konabari (1).webp'
+import hero2 from '../assets/LabAid Hospital Konabari (2).webp'
+import hero3 from '../assets/LabAid Hospital Konabari (3).webp'
 
 const slides = [
   {
@@ -34,6 +34,12 @@ const slides = [
   },
 ]
 
+const slideSizes = [
+  { width: 1774, height: 887 },
+  { width: 1672, height: 941 },
+  { width: 986, height: 1328 },
+]
+
 export default function HeroCarousel() {
   return (
     <section className="group relative">
@@ -49,7 +55,7 @@ export default function HeroCarousel() {
         speed={900}
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={slide.title}>
             {({ isActive }) => (
               <div className="relative h-full">
                 <img
@@ -57,8 +63,10 @@ export default function HeroCarousel() {
                   className="absolute inset-0 h-full w-full object-cover"
                   decoding="async"
                   fetchPriority={index === 0 ? 'high' : 'auto'}
+                  height={slideSizes[index].height}
                   loading={index === 0 ? 'eager' : 'lazy'}
                   src={slide.image}
+                  width={slideSizes[index].width}
                   style={{
                     transform: isActive ? 'scale(1.06)' : 'scale(1)',
                     transition: 'transform 6s linear',

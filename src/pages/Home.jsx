@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import LoadingIndicator from '../components/LoadingIndicator.jsx'
+import LazySection from '../components/LazySection.jsx'
 import Reveal from '../components/Reveal.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import Slide from '../components/Slides.jsx'
@@ -50,78 +51,100 @@ function Home() {
 
       <Slide />
 
-      <Suspense fallback={<SectionFallback />}>
-        <DoctorsSchedule />
-      </Suspense>
-
-      <Reveal>
+      <LazySection minHeight="36rem">
         <Suspense fallback={<SectionFallback />}>
-          <QuickServices />
+          <DoctorsSchedule />
         </Suspense>
-      </Reveal>
+      </LazySection>
 
-      <Reveal>
+      <LazySection minHeight="18rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <QuickServices />
+          </Suspense>
+        </Reveal>
+      </LazySection>
+
+      <LazySection minHeight="26rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <Department />
+          </Suspense>
+        </Reveal>
+      </LazySection>
+
+      <LazySection minHeight="18rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <WhyChooseUs />
+          </Suspense>
+        </Reveal>
+      </LazySection>
+
+      <LazySection minHeight="16rem">
         <Suspense fallback={<SectionFallback />}>
-          <Department />
+          <Counter />
         </Suspense>
-      </Reveal>
+      </LazySection>
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <WhyChooseUs />
-        </Suspense>
-      </Reveal>
+      <LazySection minHeight="28rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <Facilities />
+          </Suspense>
+        </Reveal>
+      </LazySection>
 
-      <Suspense fallback={<SectionFallback />}>
-        <Counter />
-      </Suspense>
+      <LazySection minHeight="32rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <Gallery />
+          </Suspense>
+        </Reveal>
+      </LazySection>
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <Facilities />
-        </Suspense>
-      </Reveal>
+      <LazySection minHeight="24rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <Testimonial />
+          </Suspense>
+        </Reveal>
+      </LazySection>
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <Gallery />
-        </Suspense>
-      </Reveal>
+      <LazySection minHeight="14rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <Emergency />
+          </Suspense>
+        </Reveal>
+      </LazySection>
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <Testimonial />
-        </Suspense>
-      </Reveal>
+      <LazySection minHeight="20rem">
+        <Reveal>
+          <Suspense fallback={<SectionFallback />}>
+            <News />
+          </Suspense>
+        </Reveal>
+      </LazySection>
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <Emergency />
-        </Suspense>
-      </Reveal>
+      <LazySection minHeight="30rem">
+        <Reveal>
+          <section className="section-padding bg-white" id="appointment">
+            <div className="section-container grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+              <SectionHeader
+                align="left"
+                eyebrow="Appointment"
+                title="Book Appointment Online"
+                text="Patients can request doctor appointments from the website."
+              />
 
-      <Reveal>
-        <Suspense fallback={<SectionFallback />}>
-          <News />
-        </Suspense>
-      </Reveal>
-
-      <Reveal>
-        <section className="section-padding bg-white" id="appointment">
-          <div className="section-container grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <SectionHeader
-              align="left"
-              eyebrow="Appointment"
-              title="Book Appointment Online"
-              text="Patients can request doctor appointments from the website."
-            />
-
-            <Suspense fallback={<SectionFallback />}>
-              <AppointmentForm />
-            </Suspense>
-          </div>
-        </section>
-      </Reveal>
+              <Suspense fallback={<SectionFallback />}>
+                <AppointmentForm />
+              </Suspense>
+            </div>
+          </section>
+        </Reveal>
+      </LazySection>
     </main>
   )
 }

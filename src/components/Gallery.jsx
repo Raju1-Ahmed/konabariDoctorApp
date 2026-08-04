@@ -13,46 +13,44 @@ const hospitalImages = [
   'https://i.ibb.co/YTWSHNRH/Lab-Aid-Hospital-Konabari-Gallery-image-9.jpg',
   'https://i.ibb.co/RppShBnb/Lab-Aid-Hospital-Konabari-Gallery-image-10.jpg',
   'https://i.ibb.co/99Khs7dk/Lab-Aid-Hospital-Konabari-Gallery-image-11.jpg',
-  'https://i.ibb.co/VcC7yq02/Lab-Aid-Hospital-Konabari-Gallery-image-12.jpg'
+  'https://i.ibb.co/VcC7yq02/Lab-Aid-Hospital-Konabari-Gallery-image-12.jpg',
 ]
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
-    <section className="bg-white section-padding" id="gallery">
+    <section className="section-padding bg-white" id="gallery">
       <div className="section-container">
-        <SectionHeader 
-          eyebrow="Gallery" 
-          title="Hospital photos and facilities" 
-          text="Real hospital photos showing our helpful staff, celebrations, reception desk, and active patient care areas." 
+        <SectionHeader
+          eyebrow="Gallery"
+          title="Hospital photos and facilities"
+          text="Real hospital photos showing our helpful staff, celebrations, reception desk, and active patient care areas."
         />
 
-        {/* Responsive Grid Layout */}
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {hospitalImages.map((src, index) => {
-            // Pads single digits with a leading zero dynamically (e.g., 01, 09, 10)
             const photoNumber = String(index + 1).padStart(2, '0')
 
             return (
-              <article 
+              <article
                 key={src + index}
                 onClick={() => setSelectedImage(src)}
-                className="group relative h-64 cursor-pointer overflow-hidden rounded-[1.75rem] shadow-xl shadow-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-[1.75rem] shadow-xl shadow-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               >
-                {/* Image element with hover zoom effect */}
-                <img 
-                  src={src} 
-                  alt={`Hospital facility and staff view ${index + 1}`} 
+                <img
+                  alt={`Hospital facility and staff view ${index + 1}`}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  decoding="async"
                   loading="lazy"
+                  src={src}
+                  width={1200}
+                  height={900}
                 />
 
-                {/* Gradient overlay for better styling structure */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                
-                {/* Image Number Badge */}
-                <div className="absolute top-4 left-4 rounded-xl border border-white/40 bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">
+
+                <div className="absolute left-4 top-4 rounded-xl border border-white/40 bg-white/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">
                   Photo {photoNumber}
                 </div>
               </article>
@@ -61,25 +59,28 @@ function Gallery() {
         </div>
       </div>
 
-      {/* Lightbox Modal for Full-Screen View */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm animate-fade-in"
           onClick={() => setSelectedImage(null)}
         >
-          {/* stopPropagation prevents modal from closing when clicking the inner image box */}
-          <div 
-            className="relative max-w-4xl max-h-[85vh] overflow-hidden rounded-2xl"
-            onClick={(e) => e.stopPropagation()}
+          <div
+            className="relative max-h-[85vh] max-w-4xl overflow-hidden rounded-2xl"
+            onClick={(event) => event.stopPropagation()}
           >
-            <img 
-              src={selectedImage} 
-              alt="Enlarged hospital view" 
-              className="object-contain max-h-[85vh] w-full"
+            <img
+              alt="Enlarged hospital view"
+              className="max-h-[85vh] w-full object-contain"
+              decoding="async"
+              src={selectedImage}
+              width={1600}
+              height={900}
             />
-            <button 
-              className="absolute top-4 right-4 rounded-full bg-white/80 p-2 text-black hover:bg-white"
+            <button
+              aria-label="Close gallery preview"
+              className="absolute right-4 top-4 rounded-full bg-white/80 p-2 text-black hover:bg-white"
               onClick={() => setSelectedImage(null)}
+              type="button"
             >
               ✕
             </button>

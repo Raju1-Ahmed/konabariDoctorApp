@@ -1,6 +1,6 @@
 import { FaCheckCircle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import hospitalBuilding from '../assets/LabAid Hospital Konabari (1).png'
+import hospitalBuilding from '../assets/LabAid Hospital Konabari (1).webp'
 import SectionHeader from './SectionHeader.jsx'
 
 const strengths = ['6 Floor Own Building', 'Experienced Doctors', 'Modern Equipment', 'Advanced Laboratory']
@@ -14,11 +14,13 @@ function About() {
           <div className="glass-panel relative overflow-hidden rounded-[2rem] p-4">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-accent/10" />
             <img
-              className="relative z-10 w-full rounded-[1.5rem] object-cover shadow-xl"
+              className="relative z-10 h-auto w-full rounded-[1.5rem] object-cover shadow-xl"
               src={hospitalBuilding}
               alt="Konabari Lab Aid Hospital building"
               decoding="async"
               loading="lazy"
+              width={1400}
+              height={700}
             />
             <div className="absolute bottom-6 left-6 z-20 rounded-full bg-slate-900/85 px-4 py-2 text-xs font-black uppercase tracking-[0.25em] text-white backdrop-blur">
               Konabari Lab Aid Hospital
