@@ -13,7 +13,6 @@
     "@napi-rs/canvas": "^1.0.2",
     "@tailwindcss/vite": "^4.3.2",
     "axios": "^1.18.1",
-    "framer-motion": "^12.42.2",
     "pdfjs-dist": "^6.1.200",
     "react": "^19.2.7",
     "react-countup": "^6.5.3",

@@ -1,19 +1,26 @@
-import { motion } from 'framer-motion'
-import { useReducedMotion } from 'framer-motion'
+import useInViewOnce from '../hooks/useInViewOnce.js'
+import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion.js'
 
 function Reveal({ children, className = '', delay = 0 }) {
-  const prefersReducedMotion = useReducedMotion()
+  const [elementRef, isVisible] = useInViewOnce('220px')
+  const prefersReducedMotion = usePrefersReducedMotion()
 
   return (
-    <motion.div
-      className={className}
-      initial={prefersReducedMotion ? false : { opacity: 0, y: 34 }}
-      transition={{ duration: prefersReducedMotion ? 0 : 0.65, ease: 'easeOut', delay }}
-      viewport={{ once: true, amount: 0.18 }}
-      whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
+    <div
+      ref={elementRef}
+      className={`transition-all duration-700 ease-out ${className}`}
+      style={
+        prefersReducedMotion
+          ? undefined
+          : {
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(34px)',
+              transitionDelay: isVisible ? `${delay}ms` : '0ms',
+            }
+      }
     >
       {children}
-    </motion.div>
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
-import { motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 import { statistics } from '../data/siteData.js'
+import useInViewOnce from '../hooks/useInViewOnce.js'
+import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion.js'
 
 function AnimatedNumber({ value, active, reduceMotion }) {
   const [displayValue, setDisplayValue] = useState(reduceMotion ? value : 0)
@@ -41,28 +42,33 @@ function AnimatedNumber({ value, active, reduceMotion }) {
 }
 
 function CounterCard({ statistic, index, reduceMotion }) {
-  const [isVisible, setIsVisible] = useState(false)
+  const [elementRef, isVisible] = useInViewOnce('180px')
 
   return (
-    <motion.div
-      className="rounded-3xl bg-white/10 p-8 text-center ring-1 ring-white/15 backdrop-blur"
-      initial={reduceMotion ? false : { opacity: 0, y: 28 }}
-      transition={{ duration: reduceMotion ? 0 : 0.55, delay: index * 0.08 }}
-      viewport={{ once: true, amount: 0.4 }}
-      whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-      onViewportEnter={() => setIsVisible(true)}
+    <div
+      ref={elementRef}
+      className="rounded-3xl bg-white/10 p-8 text-center ring-1 ring-white/15 backdrop-blur transition-all duration-700 ease-out"
+      style={
+        reduceMotion
+          ? undefined
+          : {
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(28px)',
+              transitionDelay: isVisible ? `${index * 80}ms` : '0ms',
+            }
+      }
     >
       <strong className="font-poppins text-5xl font-black">
         <AnimatedNumber active={isVisible} reduceMotion={reduceMotion} value={statistic.value} />
         {statistic.suffix}
       </strong>
       <span className="mt-3 block font-bold text-teal-50">{statistic.label}</span>
-    </motion.div>
+    </div>
   )
 }
 
 function Counter() {
-  const prefersReducedMotion = useReducedMotion()
+  const prefersReducedMotion = usePrefersReducedMotion()
 
   return (
     <section className="relative overflow-hidden bg-primary py-16 text-white">
