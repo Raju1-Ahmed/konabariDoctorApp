@@ -7,6 +7,106 @@ export const contactInfo = {
   whatsapp: 'https://wa.me/8801916546817',
 }
 
+export const seoPages = {
+  home: {
+    title: 'Konabari Lab Aid Hospital | Hospital in Konabari, Gazipur',
+    description:
+      'Konabari Lab Aid Hospital in Konabari, Gazipur offers 24/7 emergency care, specialist doctors, diagnostic services, ICU support and online appointment booking.',
+    keywords: [
+      'Konabari Lab Aid Hospital',
+      'hospital in Konabari',
+      'hospital in Gazipur',
+      'best hospital in Gazipur',
+      '24/7 emergency hospital',
+      'doctor appointment hospital',
+      'diagnostic center in Gazipur',
+      'ICU hospital in Gazipur',
+      'emergency ambulance service',
+      'online appointment booking',
+      'মেডিসিন ডাক্তার গাজীপুর',
+      'গাইনী ডাক্তার কনাবাড়ি',
+      'ডায়াগনস্টিক সেন্টার গাজীপুর',
+      '২৪ ঘণ্টা হাসপাতাল',
+    ],
+  },
+  about: {
+    title: 'About | Konabari Lab Aid Hospital',
+    description:
+      'Learn about Konabari Lab Aid Hospital, its modern facilities, experienced doctors, emergency support and patient-focused healthcare.',
+    keywords: [
+      'about Konabari Lab Aid Hospital',
+      'hospital profile Gazipur',
+      'modern healthcare hospital',
+      'experienced doctors',
+      'patient focused hospital',
+    ],
+  },
+  doctors: {
+    title: 'Doctors | Konabari Lab Aid Hospital',
+    description:
+      'View specialist doctors, qualifications, department information and chamber schedule at Konabari Lab Aid Hospital.',
+    keywords: [
+      'doctor list Gazipur',
+      'specialist doctors',
+      'doctor chamber time',
+      'doctor appointment',
+      'hospital doctors Konabari',
+    ],
+  },
+  appointment: {
+    title: 'Appointment | Konabari Lab Aid Hospital',
+    description:
+      'Book an appointment at Konabari Lab Aid Hospital with selected doctor, department, day and chamber time.',
+    keywords: [
+      'online appointment',
+      'book doctor appointment',
+      'hospital appointment form',
+      'doctor schedule booking',
+      'appointment with specialist doctor',
+    ],
+  },
+  contact: {
+    title: 'Contact | Konabari Lab Aid Hospital',
+    description:
+      'Contact Konabari Lab Aid Hospital for address, phone, email, opening hours, emergency number and Google Map location.',
+    keywords: [
+      'hospital contact Gazipur',
+      'emergency hotline',
+      'hospital address',
+      'WhatsApp hospital contact',
+      'Google Map hospital',
+    ],
+  },
+}
+
+export const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Hospital',
+  name: 'Konabari Lab Aid Hospital',
+  url: 'https://konabarilabaidhospital.com',
+  telephone: `+88${contactInfo.emergency}`,
+  email: contactInfo.email,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Konabari',
+    addressLocality: 'Gazipur',
+    addressCountry: 'BD',
+  },
+  areaServed: ['Konabari', 'Gazipur', 'Bangladesh'],
+  medicalSpecialty: [
+    'Emergency Medicine',
+    'Internal Medicine',
+    'Cardiology',
+    'Gynecology',
+    'Pediatrics',
+    'Orthopedics',
+    'Neurology',
+    'Surgery',
+  ],
+  openingHours: 'Mo-Su 00:00-23:59',
+  sameAs: [contactInfo.facebook, contactInfo.whatsapp],
+}
+
 export const navItems = [
   { label: 'Home', href: '/#home' },
   { label: 'About', href: '/about' },

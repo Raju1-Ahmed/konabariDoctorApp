@@ -5,6 +5,7 @@ import LazySection from '../components/LazySection.jsx'
 import Reveal from '../components/Reveal.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import Slide from '../components/Slides.jsx'
+import { organizationSchema, seoPages } from '../data/siteData.js'
 
 const AppointmentForm = lazy(() => import('../components/AppointmentForm.jsx'))
 const Counter = lazy(() => import('../components/Counter.jsx'))
@@ -31,22 +32,18 @@ function Home() {
     <main>
       <Helmet>
         <html lang="bn-BD" />
-        <title>Konabari Lab Aid Hospital | Official Website, Doctors & Appointment Demo</title>
-        <meta
-          name="description"
-          content="Konabari Lab Aid Hospital website demo with doctors, departments, online appointment, emergency care, facilities, gallery, patient reviews and Google Map contact."
-        />
-        <meta
-          name="keywords"
-          content="Konabari Lab Aid Hospital, Gazipur hospital, doctor appointment, diagnostic center, emergency hospital, hospital website demo"
-        />
-        <meta property="og:title" content="Konabari Lab Aid Hospital Website Demo" />
-        <meta
-          property="og:description"
-          content="Corporate hospital website demo for patient trust, online appointment, doctor schedule, emergency contact and digital branding."
-        />
+        <title>{seoPages.home.title}</title>
+        <meta name="description" content={seoPages.home.description} />
+        <meta name="keywords" content={seoPages.home.keywords.join(', ')} />
+        <meta property="og:title" content={seoPages.home.title} />
+        <meta property="og:description" content={seoPages.home.description} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Konabari Lab Aid Hospital" />
+        <meta property="og:locale" content="bn_BD" />
+        <meta name="twitter:title" content={seoPages.home.title} />
+        <meta name="twitter:description" content={seoPages.home.description} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
       </Helmet>
 
       <Slide />

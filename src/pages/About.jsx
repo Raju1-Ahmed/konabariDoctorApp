@@ -1,21 +1,20 @@
 import { Helmet } from 'react-helmet-async'
-import About from '../components/About.jsx'
+import AboutSection from '../components/About.jsx'
 import WhyChooseUs from '../components/WhyChooseUs.jsx'
 import ManagingDirectors from '../components/ManagingDirectors.jsx'
+import { seoPages } from '../data/siteData.js'
 
 function AboutPage() {
   return (
     <main>
       <Helmet>
         <html lang="bn-BD" />
-        <title>About | Konabari Lab Aid Hospital</title>
-        <meta
-          name="description"
-          content="Learn about Konabari Lab Aid Hospital, its modern facilities, experienced doctors, emergency service and patient-focused healthcare."
-        />
+        <title>{seoPages.about.title}</title>
+        <meta name="description" content={seoPages.about.description} />
+        <meta name="keywords" content={seoPages.about.keywords.join(', ')} />
       </Helmet>
-      <About />
-      <ManagingDirectors/>
+      <AboutSection />
+      <ManagingDirectors />
       <WhyChooseUs />
     </main>
   )
