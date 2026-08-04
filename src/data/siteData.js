@@ -107,6 +107,25 @@ export const organizationSchema = {
   sameAs: [contactInfo.facebook, contactInfo.whatsapp],
 }
 
+export const faqItems = [
+  {
+    question: 'Konabari Lab Aid Hospital ki 24/7 emergency service dey?',
+    answer: 'Haan, hospital-ti 24/7 emergency care, emergency hotline ebong ambulance support provide kore.',
+  },
+  {
+    question: 'Online appointment booking available ache?',
+    answer: 'Haan, website theke doctor select kore appointment request pathano jay.',
+  },
+  {
+    question: 'Kuno specific doctor chamber time dekha jay?',
+    answer: 'Haan, doctor card ebong appointment form-e chamber time, day ebong department dekhano hoy.',
+  },
+  {
+    question: 'Hospital-e ki diagnostic lab service ache?',
+    answer: 'Haan, diagnostic services, lab support ebong health package information website-e available.',
+  },
+]
+
 export const navItems = [
   { label: 'Home', href: '/#home' },
   { label: 'About', href: '/about' },
